@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -23,15 +24,49 @@ android {
         }
     }
 
+    dataBinding {
+        enabled = true
+    }
+
 }
 
+def glideVersion = '4.9.0'
+def appCompatVersion = '1.1.0'
+def materialVersion = '1.0.0'
+def retrofitVersion = '2.3.0'
+def rxJavaVersion = '2.1.0'
+def rxBindingVersion = '3.0.0'
+def constraintVersion = '1.1.3'
+def lifeCycleExtensionsVersion = '2.1.0'
+
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation "androidx.recyclerview:recyclerview:$materialVersion"
+    implementation "androidx.cardview:cardview:$materialVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintVersion"
+    implementation 'androidx.core:core-ktx:1.1.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxJavaVersion"
+    implementation "com.jakewharton.rxbinding3:rxbinding:$rxBindingVersion"
+
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifeCycleExtensionsVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleExtensionsVersion"
+
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+
 }
