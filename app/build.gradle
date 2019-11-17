@@ -24,13 +24,22 @@ android {
         }
     }
 
+    buildTypes.each {
+        it.buildConfigField 'String', 'BASE_URL', BASE_URL
+    }
+
     dataBinding {
         enabled = true
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
-def glideVersion = '4.9.0'
+def glideVersion = '4.10.0'
 def appCompatVersion = '1.1.0'
 def materialVersion = '1.0.0'
 def retrofitVersion = '2.3.0'
@@ -40,6 +49,8 @@ def constraintVersion = '1.1.3'
 def lifeCycleExtensionsVersion = '2.1.0'
 
 dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -66,7 +77,4 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-extensions:$lifeCycleExtensionsVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleExtensionsVersion"
-
-    implementation 'com.facebook.stetho:stetho:1.5.0'
-
 }
