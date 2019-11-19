@@ -5,15 +5,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
     tools:context=".features.dashboard.ui.kelas.KelasFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/recycler_kelas"
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_caption_kelas"
       android:layout_width="0dp"
-      android:layout_height="0dp"
-      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_height="wrap_content"
+      android:text="Pilih Kelas : "
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+      android:id="@+id/spinner_kelas"
+      android:layout_width="0dp"
+      android:layout_height="56dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_caption_kelas" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_caption_kategori_kelas"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Pilih Kategori Kelas : "
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/spinner_kelas" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+      android:id="@+id/spinner_kategori_kelas"
+      android:layout_width="0dp"
+      android:layout_height="56dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_caption_kategori_kelas" />
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

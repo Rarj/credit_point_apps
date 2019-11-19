@@ -6,21 +6,35 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatSpinner;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import androidx.recyclerview.widget.RecyclerView;
 import grack.dev.creditpointapp.R;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentKelasBinding extends ViewDataBinding {
   @NonNull
-  public final RecyclerView recyclerKelas;
+  public final AppCompatSpinner spinnerKategoriKelas;
+
+  @NonNull
+  public final AppCompatSpinner spinnerKelas;
+
+  @NonNull
+  public final AppCompatTextView textCaptionKategoriKelas;
+
+  @NonNull
+  public final AppCompatTextView textCaptionKelas;
 
   protected FragmentKelasBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView recyclerKelas) {
+      AppCompatSpinner spinnerKategoriKelas, AppCompatSpinner spinnerKelas,
+      AppCompatTextView textCaptionKategoriKelas, AppCompatTextView textCaptionKelas) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.recyclerKelas = recyclerKelas;
+    this.spinnerKategoriKelas = spinnerKategoriKelas;
+    this.spinnerKelas = spinnerKelas;
+    this.textCaptionKategoriKelas = textCaptionKategoriKelas;
+    this.textCaptionKelas = textCaptionKelas;
   }
 
   @NonNull

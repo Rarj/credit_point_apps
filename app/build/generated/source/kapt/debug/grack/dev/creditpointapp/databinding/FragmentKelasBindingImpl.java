@@ -14,7 +14,10 @@ public class FragmentKelasBindingImpl extends FragmentKelasBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.recycler_kelas, 1);
+        sViewsWithIds.put(R.id.text_caption_kelas, 1);
+        sViewsWithIds.put(R.id.spinner_kelas, 2);
+        sViewsWithIds.put(R.id.text_caption_kategori_kelas, 3);
+        sViewsWithIds.put(R.id.spinner_kategori_kelas, 4);
     }
     // views
     @NonNull
@@ -25,11 +28,14 @@ public class FragmentKelasBindingImpl extends FragmentKelasBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentKelasBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
     }
     private FragmentKelasBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.recyclerview.widget.RecyclerView) bindings[1]
+            , (androidx.appcompat.widget.AppCompatSpinner) bindings[4]
+            , (androidx.appcompat.widget.AppCompatSpinner) bindings[2]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
