@@ -24,7 +24,7 @@ object SharedPref {
     val idAdmin = preferences.getString("id_admin", "")
     val levelAdmin = preferences.getString("level_admin", "")
     val namaAdmin = preferences.getString("nama_admin", "")
-    val password_admin = preferences.getString("password_admin", "")
+    val passwordAdmin = preferences.getString("password_admin", "")
     val statusAdmin = preferences.getString("statusAdmin", "")
     return UserPreferences(
       alamatAdmin,
@@ -32,7 +32,7 @@ object SharedPref {
       idAdmin,
       levelAdmin,
       namaAdmin,
-      password_admin,
+      passwordAdmin,
       statusAdmin
     )
   }
@@ -40,5 +40,24 @@ object SharedPref {
   fun removeUser(context: Context?) {
     val preferences = PreferenceManager.getDefaultSharedPreferences(context)
     preferences.edit().clear().apply()
+  }
+
+  fun setUserLoggedIn(ctx: Context?, isAdminLoggedIn: Boolean?) {
+    val preferences = PreferenceManager.getDefaultSharedPreferences(ctx)
+    val editor = preferences.edit()
+    editor.putBoolean("isLoggedIn", isAdminLoggedIn ?: false)
+    editor.apply()
+  }
+
+  fun getUserLoggedIn(ctx: Context): Boolean? {
+    val preferences = PreferenceManager.getDefaultSharedPreferences(ctx)
+    return preferences.getBoolean("isLoggedIn", false)
+  }
+
+  fun removeUserLoggedIn(ctx: Context?) {
+    val preferences = PreferenceManager.getDefaultSharedPreferences(ctx)
+    val editor = preferences.edit()
+    editor.putBoolean("isLoggedIn", false)
+    editor.apply()
   }
 }

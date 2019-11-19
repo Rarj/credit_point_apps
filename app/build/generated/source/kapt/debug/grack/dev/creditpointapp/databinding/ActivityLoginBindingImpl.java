@@ -20,8 +20,6 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
         sViewsWithIds.put(R.id.button_login, 6);
     }
     // views
-    @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -107,16 +105,16 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     private ActivityLoginBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 2
             , (com.google.android.material.button.MaterialButton) bindings[6]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[3]
             , (com.google.android.material.textfield.TextInputEditText) bindings[1]
             , (com.google.android.material.textfield.TextInputLayout) bindings[4]
             , (com.google.android.material.textfield.TextInputLayout) bindings[5]
             , (com.google.android.material.textfield.TextInputEditText) bindings[2]
             );
+        this.container.setTag(null);
         this.inputEmail.setTag(null);
         this.inputPassword.setTag(null);
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();

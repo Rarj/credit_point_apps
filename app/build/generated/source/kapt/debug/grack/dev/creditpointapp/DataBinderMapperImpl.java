@@ -7,6 +7,9 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import grack.dev.creditpointapp.databinding.ActivityLoginBindingImpl;
+import grack.dev.creditpointapp.databinding.FragmentDataPelanggaranBindingImpl;
+import grack.dev.creditpointapp.databinding.FragmentKelasBindingImpl;
+import grack.dev.creditpointapp.databinding.ItemDataPelanggaranBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -20,10 +23,19 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYLOGIN = 1;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
+  private static final int LAYOUT_FRAGMENTDATAPELANGGARAN = 2;
+
+  private static final int LAYOUT_FRAGMENTKELAS = 3;
+
+  private static final int LAYOUT_ITEMDATAPELANGGARAN = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.fragment_data_pelanggaran, LAYOUT_FRAGMENTDATAPELANGGARAN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.fragment_kelas, LAYOUT_FRAGMENTKELAS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_data_pelanggaran, LAYOUT_ITEMDATAPELANGGARAN);
   }
 
   @Override
@@ -40,6 +52,24 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityLoginBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_login is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTDATAPELANGGARAN: {
+          if ("layout/fragment_data_pelanggaran_0".equals(tag)) {
+            return new FragmentDataPelanggaranBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_data_pelanggaran is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTKELAS: {
+          if ("layout/fragment_kelas_0".equals(tag)) {
+            return new FragmentKelasBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_kelas is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMDATAPELANGGARAN: {
+          if ("layout/item_data_pelanggaran_0".equals(tag)) {
+            return new ItemDataPelanggaranBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_data_pelanggaran is invalid. Received: " + tag);
         }
       }
     }
@@ -95,10 +125,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
       sKeys.put("layout/activity_login_0", grack.dev.creditpointapp.R.layout.activity_login);
+      sKeys.put("layout/fragment_data_pelanggaran_0", grack.dev.creditpointapp.R.layout.fragment_data_pelanggaran);
+      sKeys.put("layout/fragment_kelas_0", grack.dev.creditpointapp.R.layout.fragment_kelas);
+      sKeys.put("layout/item_data_pelanggaran_0", grack.dev.creditpointapp.R.layout.item_data_pelanggaran);
     }
   }
 }

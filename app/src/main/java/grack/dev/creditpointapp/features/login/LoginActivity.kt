@@ -1,16 +1,18 @@
 package grack.dev.creditpointapp.features.login
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.lifecycle.ViewModelProviders
+import com.google.android.material.snackbar.Snackbar
 import com.jakewharton.rxbinding3.view.clicks
 import com.jakewharton.rxbinding3.widget.afterTextChangeEvents
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.ActivityLoginBinding
+import grack.dev.creditpointapp.features.dashboard.DashboardActivity
 import grack.dev.creditpointapp.preferences.SharedPref
-import grack.dev.creditpointapp.preferences.UserPreferences
 import java.util.concurrent.TimeUnit
 
 class LoginActivity : AppCompatActivity() {
@@ -48,9 +50,17 @@ class LoginActivity : AppCompatActivity() {
           .subscribe {
             if (it.status == "success") {
               SharedPref.saveUser(loginViewModel.userPreferences.value, this)
-              stateButtonLogin(true, "Success")
+              SharedPref.setUserLoggedIn(this, true)
+              stateButtonLogin(true, "Login")
+              startActivity(Intent(this, DashboardActivity::class.java))
+              finish()
             } else {
-              stateButtonLogin(true, "Failed")
+              stateButtonLogin(true, "Login")
+              Snackbar.make(
+                bindingLoginActivity.container,
+                it.message.toString(),
+                Snackbar.LENGTH_LONG
+              ).show()
             }
           }
       }

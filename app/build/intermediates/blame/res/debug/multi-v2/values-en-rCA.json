@@ -4,7 +4,7 @@
             "outputFile": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a582fa6f5ec25b4ebdf31a91e28d5f0d/appcompat-1.1.0/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/c49d0f5850c2ff2b19bc9ac6b35252be/appcompat-1.1.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/ec4df20c44042760ddced03ead47e8bd/core-1.1.0/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/8590d24d8030c26c43694eac0eb953bf/core-1.1.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

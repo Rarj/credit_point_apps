@@ -4,7 +4,7 @@
             "outputFile": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a582fa6f5ec25b4ebdf31a91e28d5f0d/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/c49d0f5850c2ff2b19bc9ac6b35252be/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

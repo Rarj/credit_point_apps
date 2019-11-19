@@ -4,7 +4,7 @@
             "outputFile": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a582fa6f5ec25b4ebdf31a91e28d5f0d/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/c49d0f5850c2ff2b19bc9ac6b35252be/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/41cd629fd9a50e9f47ecf8171b1c39cf/material-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/24631badc29938e4f3a1b6a6270728ac/material-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
