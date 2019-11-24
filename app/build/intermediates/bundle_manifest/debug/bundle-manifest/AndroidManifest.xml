@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.inputsiswa.InputPointActivity" />
         <activity
             android:name="grack.dev.creditpointapp.features.splashscreen.SplashScreenActivity"
             android:theme="@style/AppTheme.Splash" >

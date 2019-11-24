@@ -2,9 +2,9 @@ package grack.dev.creditpointapp.network
 
 import grack.dev.creditpointapp.repository.datainformasi.model.DataInformasiResponse
 import grack.dev.creditpointapp.repository.datapelanggaran.model.DataPelanggaran
+import grack.dev.creditpointapp.repository.detailsiswa.detail.DetailSiswaResponse
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.kelas.KelasResponse
-import grack.dev.creditpointapp.repository.kelas.model.siswa.detail.DetailSiswaResponse
 import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
@@ -35,6 +35,6 @@ interface ApiConfig {
   fun requestSiswa(@Query("id_kelas") idKelas: String?): Observable<DataSiswaResponse>
 
   @GET("siswa/detail-siswa")
-  fun requestDetailSiswa(@Query("id_siswa") idSiswa: Int): Observable<DetailSiswaResponse>
+  fun requestDetailSiswa(@Query("id_siswa") idSiswa: String?): Observable<DetailSiswaResponse>
 
 }

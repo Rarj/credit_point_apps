@@ -1,6 +1,7 @@
 package grack.dev.creditpointapp.features.dashboard.ui.kelas
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.FragmentKelasBinding
+import grack.dev.creditpointapp.features.dashboard.ui.inputsiswa.InputPointActivity
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelas
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
@@ -113,10 +115,9 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
         val siswa = arrayAdapter.getItem(position)
 
         if (siswa?.nama != "") {
-          kelasViewModel.listSiswa(siswa?.idKelas)
-            .subscribe { dataSiswaResponse ->
-
-            }
+          val intent = Intent(activity, InputPointActivity::class.java)
+          intent.putExtra("key_id_siswa", siswa?.idSiswa)
+          startActivity(intent)
         }
       }
     }
