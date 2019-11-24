@@ -12,4 +12,10 @@ data class KategoriKelas(
     var kelas: String?,
     @SerializedName("nama_kelas")
     var namaKelas: String?
-)
+) {
+    override fun toString(): String {
+        return namaKelas.toString()
+    }
+
+    constructor():this("","","","")
+}

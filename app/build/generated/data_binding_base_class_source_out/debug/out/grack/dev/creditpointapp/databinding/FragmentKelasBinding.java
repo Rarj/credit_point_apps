@@ -22,19 +22,28 @@ public abstract class FragmentKelasBinding extends ViewDataBinding {
   public final AppCompatSpinner spinnerKelas;
 
   @NonNull
+  public final AppCompatSpinner spinnerSiswa;
+
+  @NonNull
   public final AppCompatTextView textCaptionKategoriKelas;
 
   @NonNull
   public final AppCompatTextView textCaptionKelas;
 
+  @NonNull
+  public final AppCompatTextView textCaptionSiswa;
+
   protected FragmentKelasBinding(Object _bindingComponent, View _root, int _localFieldCount,
       AppCompatSpinner spinnerKategoriKelas, AppCompatSpinner spinnerKelas,
-      AppCompatTextView textCaptionKategoriKelas, AppCompatTextView textCaptionKelas) {
+      AppCompatSpinner spinnerSiswa, AppCompatTextView textCaptionKategoriKelas,
+      AppCompatTextView textCaptionKelas, AppCompatTextView textCaptionSiswa) {
     super(_bindingComponent, _root, _localFieldCount);
     this.spinnerKategoriKelas = spinnerKategoriKelas;
     this.spinnerKelas = spinnerKelas;
+    this.spinnerSiswa = spinnerSiswa;
     this.textCaptionKategoriKelas = textCaptionKategoriKelas;
     this.textCaptionKelas = textCaptionKelas;
+    this.textCaptionSiswa = textCaptionSiswa;
   }
 
   @NonNull

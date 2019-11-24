@@ -12,6 +12,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.FragmentKelasBinding
+import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelas
+import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
+import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
+import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.Siswa
 
 class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
@@ -51,16 +55,71 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
   @SuppressLint("CheckResult")
   override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
     kelasViewModel.listKategoriKelas(binding.spinnerKelas.selectedItem.toString())
-      .subscribe {
-        val kategoriKelasList = ArrayList<String>()
-
-        it.kategoriKelas?.forEach { kategoriKelas ->
-          kategoriKelasList.add(kategoriKelas?.namaKelas.toString())
-        }
-
-        val arrayAdapter = ArrayAdapter<String>(activity!!, android.R.layout.simple_spinner_item, kategoriKelasList)
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.spinnerKategoriKelas.adapter = arrayAdapter
+      .subscribe { response ->
+        setKategoriKelas(response)
       }
   }
+
+  private fun setKategoriKelas(kategoriKelasResponse: KategoriKelasResponse) {
+    val kategoriKelasList = ArrayList<KategoriKelas>()
+    kategoriKelasList.add(KategoriKelas())
+
+    kategoriKelasResponse.kategoriKelas?.forEach { kategoriKelas ->
+      kategoriKelasList.add(kategoriKelas)
+    }
+
+    val arrayAdapter = ArrayAdapter<KategoriKelas>(activity!!, android.R.layout.simple_spinner_item, kategoriKelasList)
+    arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+    binding.spinnerKategoriKelas.adapter = arrayAdapter
+
+    binding.spinnerKategoriKelas.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+      override fun onNothingSelected(parent: AdapterView<*>?) {
+
+      }
+
+      @SuppressLint("CheckResult")
+      override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        val selectedText = arrayAdapter.getItem(position)
+
+        if (selectedText?.namaKelas != "") {
+          kelasViewModel.listSiswa(selectedText?.idKelas)
+            .subscribe { dataKelasResponse ->
+              setSiswa(dataKelasResponse)
+            }
+        }
+      }
+    }
+  }
+
+  private fun setSiswa(dataSiswaResponse: DataSiswaResponse) {
+    val dataKelasList = ArrayList<Siswa>()
+    dataKelasList.add(Siswa())
+
+    dataSiswaResponse.siswa?.forEach { siswa ->
+      dataKelasList.add(siswa)
+    }
+
+    val arrayAdapter = ArrayAdapter<Siswa>(activity!!, android.R.layout.simple_spinner_item, dataKelasList)
+    arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+    binding.spinnerSiswa.adapter = arrayAdapter
+
+    binding.spinnerSiswa.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+      override fun onNothingSelected(parent: AdapterView<*>?) {
+
+      }
+
+      @SuppressLint("CheckResult")
+      override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        val siswa = arrayAdapter.getItem(position)
+
+        if (siswa?.nama != "") {
+          kelasViewModel.listSiswa(siswa?.idKelas)
+            .subscribe { dataSiswaResponse ->
+
+            }
+        }
+      }
+    }
+  }
+
 }

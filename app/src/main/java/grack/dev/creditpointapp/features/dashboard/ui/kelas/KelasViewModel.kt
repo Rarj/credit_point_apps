@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import grack.dev.creditpointapp.repository.kelas.KelasRepository
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.kelas.KelasResponse
+import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
 import io.reactivex.Observable
 
 class KelasViewModel : ViewModel() {
@@ -17,6 +18,13 @@ class KelasViewModel : ViewModel() {
 
   fun listKategoriKelas(kelas: String): Observable<KategoriKelasResponse> {
     return KelasRepository.provideKategoriKelas(kelas)
+      .map {
+        it
+      }
+  }
+
+  fun listSiswa(idKelas: String?): Observable<DataSiswaResponse> {
+    return KelasRepository.provideDetailSiswa(idKelas)
       .map {
         it
       }

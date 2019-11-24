@@ -1325,6 +1325,7 @@ id snapMargins
 id spacer
 id spinner_kategori_kelas
 id spinner_kelas
+id spinner_siswa
 id split_action_bar
 id spread
 id spread_inside
@@ -1355,6 +1356,7 @@ id textView
 id textWatcher
 id text_caption_kategori_kelas
 id text_caption_kelas
+id text_caption_siswa
 id text_creator_informasi
 id text_input_password_toggle
 id text_judul_informasi

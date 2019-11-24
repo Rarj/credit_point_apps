@@ -4,6 +4,8 @@ import grack.dev.creditpointapp.repository.datainformasi.model.DataInformasiResp
 import grack.dev.creditpointapp.repository.datapelanggaran.model.DataPelanggaran
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.kelas.KelasResponse
+import grack.dev.creditpointapp.repository.kelas.model.siswa.detail.DetailSiswaResponse
+import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
 import io.reactivex.Observable
@@ -28,5 +30,11 @@ interface ApiConfig {
 
   @GET("information")
   fun requestDataInformasi(): Observable<DataInformasiResponse>
+
+  @GET("siswa")
+  fun requestSiswa(@Query("id_kelas") idKelas: String?): Observable<DataSiswaResponse>
+
+  @GET("siswa/detail-siswa")
+  fun requestDetailSiswa(@Query("id_siswa") idSiswa: Int): Observable<DetailSiswaResponse>
 
 }
