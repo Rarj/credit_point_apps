@@ -4,92 +4,34 @@ package grack.dev.creditpointapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.button.MaterialButton;
 import grack.dev.creditpointapp.R;
-import grack.dev.creditpointapp.features.dashboard.ui.inputsiswa.InputPointViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityInputPointBinding extends ViewDataBinding {
   @NonNull
-  public final ImageButton buttonBack;
+  public final AppCompatImageButton buttonBack;
 
   @NonNull
-  public final MaterialCardView containerDataAyah;
+  public final MaterialButton buttonSave;
 
   @NonNull
-  public final MaterialCardView containerDataIbu;
+  public final AppCompatSpinner spinnerInput;
 
   @NonNull
-  public final MaterialCardView containerSiswa;
+  public final AppCompatTextView textCaptionInputPoint;
 
   @NonNull
-  public final AppCompatTextView textAddressSiswa;
-
-  @NonNull
-  public final AppCompatTextView textAlamatAyahSiswa;
-
-  @NonNull
-  public final AppCompatTextView textAlamatIbuSiswa;
-
-  @NonNull
-  public final AppCompatTextView textAnakKeSiswa;
-
-  @NonNull
-  public final AppCompatTextView textCaptionParent1;
-
-  @NonNull
-  public final AppCompatTextView textCaptionParent2;
-
-  @NonNull
-  public final AppCompatTextView textDateBirthSiswa;
-
-  @NonNull
-  public final AppCompatTextView textGenderSiswa;
-
-  @NonNull
-  public final AppCompatTextView textJumlahSaudaraSiswa;
-
-  @NonNull
-  public final AppCompatTextView textNamaAyahSiswa;
-
-  @NonNull
-  public final AppCompatTextView textNamaIbuSiswa;
-
-  @NonNull
-  public final AppCompatTextView textNamaSiswa;
-
-  @NonNull
-  public final AppCompatTextView textNohpAyahSiswa;
-
-  @NonNull
-  public final AppCompatTextView textNohpIbuSiswa;
-
-  @NonNull
-  public final AppCompatTextView textNohpSiswa;
-
-  @NonNull
-  public final AppCompatTextView textPekerjaanAyahSiswa;
-
-  @NonNull
-  public final AppCompatTextView textPekerjaanIbuSiswa;
-
-  @NonNull
-  public final AppCompatTextView textPenghasilanAyahSiswa;
-
-  @NonNull
-  public final AppCompatTextView textPenghasilanIbuSiswa;
-
-  @NonNull
-  public final AppCompatTextView textPlaceBirthSiswa;
+  public final AppCompatTextView textSubtitle;
 
   @NonNull
   public final AppCompatTextView textTitle;
@@ -97,57 +39,18 @@ public abstract class ActivityInputPointBinding extends ViewDataBinding {
   @NonNull
   public final ConstraintLayout toolbar;
 
-  @Bindable
-  protected InputPointViewModel mViewModel;
-
   protected ActivityInputPointBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton buttonBack, MaterialCardView containerDataAyah, MaterialCardView containerDataIbu,
-      MaterialCardView containerSiswa, AppCompatTextView textAddressSiswa,
-      AppCompatTextView textAlamatAyahSiswa, AppCompatTextView textAlamatIbuSiswa,
-      AppCompatTextView textAnakKeSiswa, AppCompatTextView textCaptionParent1,
-      AppCompatTextView textCaptionParent2, AppCompatTextView textDateBirthSiswa,
-      AppCompatTextView textGenderSiswa, AppCompatTextView textJumlahSaudaraSiswa,
-      AppCompatTextView textNamaAyahSiswa, AppCompatTextView textNamaIbuSiswa,
-      AppCompatTextView textNamaSiswa, AppCompatTextView textNohpAyahSiswa,
-      AppCompatTextView textNohpIbuSiswa, AppCompatTextView textNohpSiswa,
-      AppCompatTextView textPekerjaanAyahSiswa, AppCompatTextView textPekerjaanIbuSiswa,
-      AppCompatTextView textPenghasilanAyahSiswa, AppCompatTextView textPenghasilanIbuSiswa,
-      AppCompatTextView textPlaceBirthSiswa, AppCompatTextView textTitle,
-      ConstraintLayout toolbar) {
+      AppCompatImageButton buttonBack, MaterialButton buttonSave, AppCompatSpinner spinnerInput,
+      AppCompatTextView textCaptionInputPoint, AppCompatTextView textSubtitle,
+      AppCompatTextView textTitle, ConstraintLayout toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonBack = buttonBack;
-    this.containerDataAyah = containerDataAyah;
-    this.containerDataIbu = containerDataIbu;
-    this.containerSiswa = containerSiswa;
-    this.textAddressSiswa = textAddressSiswa;
-    this.textAlamatAyahSiswa = textAlamatAyahSiswa;
-    this.textAlamatIbuSiswa = textAlamatIbuSiswa;
-    this.textAnakKeSiswa = textAnakKeSiswa;
-    this.textCaptionParent1 = textCaptionParent1;
-    this.textCaptionParent2 = textCaptionParent2;
-    this.textDateBirthSiswa = textDateBirthSiswa;
-    this.textGenderSiswa = textGenderSiswa;
-    this.textJumlahSaudaraSiswa = textJumlahSaudaraSiswa;
-    this.textNamaAyahSiswa = textNamaAyahSiswa;
-    this.textNamaIbuSiswa = textNamaIbuSiswa;
-    this.textNamaSiswa = textNamaSiswa;
-    this.textNohpAyahSiswa = textNohpAyahSiswa;
-    this.textNohpIbuSiswa = textNohpIbuSiswa;
-    this.textNohpSiswa = textNohpSiswa;
-    this.textPekerjaanAyahSiswa = textPekerjaanAyahSiswa;
-    this.textPekerjaanIbuSiswa = textPekerjaanIbuSiswa;
-    this.textPenghasilanAyahSiswa = textPenghasilanAyahSiswa;
-    this.textPenghasilanIbuSiswa = textPenghasilanIbuSiswa;
-    this.textPlaceBirthSiswa = textPlaceBirthSiswa;
+    this.buttonSave = buttonSave;
+    this.spinnerInput = spinnerInput;
+    this.textCaptionInputPoint = textCaptionInputPoint;
+    this.textSubtitle = textSubtitle;
     this.textTitle = textTitle;
     this.toolbar = toolbar;
-  }
-
-  public abstract void setViewModel(@Nullable InputPointViewModel viewModel);
-
-  @Nullable
-  public InputPointViewModel getViewModel() {
-    return mViewModel;
   }
 
   @NonNull

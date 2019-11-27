@@ -5,5 +5,5 @@ import com.google.gson.annotations.SerializedName
 
 data class DataPelanggaran(
     @SerializedName("point")
-    var point: List<Point?>
+    var point: List<Point>
 )

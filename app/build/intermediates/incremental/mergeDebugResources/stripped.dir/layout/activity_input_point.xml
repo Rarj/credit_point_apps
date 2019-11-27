@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-                                                            
 
-  
-             
-                      
-                                                                                             
-         
+                                                     
+                                                 
 
-  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+  <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".features.dashboard.ui.inputsiswa.InputPointActivity" android:tag="layout/activity_input_point_0" xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent"
+    tools:context=".features.dashboard.ui.inputpoint.InputPointActivity" android:tag="layout/activity_input_point_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
       android:id="@+id/toolbar"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:background="@color/colorPrimary"
+      android:padding="8dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent">
 
-      <ImageButton
+      <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/button_back"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -37,296 +33,63 @@
         android:id="@+id/text_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Detail Siswa"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/text_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Input Point" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_back"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        tools:text="Nama Siswa" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.card.MaterialCardView
-      android:id="@+id/container_siswa"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_margin="8dp"
-      app:cardCornerRadius="10dp"
-      app:cardElevation="3dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/toolbar">
-
-      <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp">
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_nama_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_1"                     
-          android:textSize="20sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent"
-          tools:text="Siswa Ganteng" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_gender_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_2"                             
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_nama_siswa"
-          tools:text="Laki - Laki" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_nohp_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_3"                       
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_gender_siswa"
-          tools:text="0823 9999 1010" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_place_birth_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_4"                            
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_nohp_siswa"
-          tools:text="Bojonegoro" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_date_birth_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_5"                         
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_place_birth_siswa"
-          tools:text="21 Januari 2019" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_address_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_6"                       
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_date_birth_siswa"
-          tools:text="Alamat" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_anak_ke_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_7"                       
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_address_siswa"
-          tools:text="Anak ke 1" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_jumlah_saudara_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_8"                              
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_anak_ke_siswa"
-          tools:text="Jumlah Saudara 2" />
-
-      </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
-
     <androidx.appcompat.widget.AppCompatTextView
-      android:id="@+id/text_caption_parent1"
-      android:layout_width="wrap_content"
+      android:id="@+id/text_caption_input_point"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
-      android:text="Data Ayah"
+      android:text="Pilih Point : "
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/container_siswa" />
+      app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
-    <View
+    <androidx.appcompat.widget.AppCompatSpinner
+      android:id="@+id/spinner_input"
       android:layout_width="0dp"
-      android:layout_height="1dp"
+      android:layout_height="56dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_caption_input_point" />
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/button_save"
+      style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+      android:layout_width="0dp"
+      android:layout_height="64dp"
       android:layout_marginStart="8dp"
-      android:layout_marginEnd="16dp"
-      android:background="@android:color/darker_gray"
-      app:layout_constraintBottom_toBottomOf="@id/text_caption_parent1"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toEndOf="@id/text_caption_parent1"
-      app:layout_constraintTop_toTopOf="@id/text_caption_parent1" />
-
-    <com.google.android.material.card.MaterialCardView
-      android:id="@+id/container_data_ayah"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_margin="8dp"
-      app:cardCornerRadius="10dp"
-      app:cardElevation="3dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/text_caption_parent1">
-
-      <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp">
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_nama_ayah_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_9"                         
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent"
-          tools:text="Supriyono" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_pekerjaan_ayah_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_10"                             
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_nama_ayah_siswa"
-          tools:text="Karyawan Swasta" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_penghasilan_ayah_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_11"                               
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_pekerjaan_ayah_siswa"
-          tools:text="Penghasilan" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_alamat_ayah_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_12"                          
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_penghasilan_ayah_siswa"
-          tools:text="Alamat" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_nohp_ayah_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_13"                          
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_alamat_ayah_siswa"
-          tools:text="No Telpon" />
-
-      </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <androidx.appcompat.widget.AppCompatTextView
-      android:id="@+id/text_caption_parent2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
-      android:text="Data Ibu"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/container_data_ayah" />
-
-    <View
-      android:layout_width="0dp"
-      android:layout_height="1dp"
-      android:layout_marginStart="8dp"
-      android:layout_marginEnd="16dp"
-      android:background="@android:color/darker_gray"
-      app:layout_constraintBottom_toBottomOf="@id/text_caption_parent2"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toEndOf="@id/text_caption_parent2"
-      app:layout_constraintTop_toTopOf="@id/text_caption_parent2" />
-
-    <com.google.android.material.card.MaterialCardView
-      android:id="@+id/container_data_ibu"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_margin="8dp"
-      app:cardCornerRadius="10dp"
-      app:cardElevation="3dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="16dp"
+      android:text="Save"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/text_caption_parent2">
+      app:strokeColor="@color/colorPrimaryDark" />
 
-      <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp">
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_nama_ibu_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_14"                       
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent"
-          tools:text="Supriyono" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_pekerjaan_ibu_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_15"                            
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_nama_ibu_siswa"
-          tools:text="Karyawan Swasta" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_penghasilan_ibu_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_16"                              
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_pekerjaan_ibu_siswa"
-          tools:text="Penghasilan" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_alamat_ibu_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_17"                         
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_penghasilan_ibu_siswa"
-          tools:text="Alamat" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-          android:id="@+id/text_nohp_ibu_siswa"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:tag="binding_18"                         
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/text_alamat_ibu_siswa"
-          tools:text="No Telpon" />
-
-      </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
 
   </androidx.constraintlayout.widget.ConstraintLayout>
          

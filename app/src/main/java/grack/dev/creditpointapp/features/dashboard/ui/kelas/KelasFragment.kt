@@ -1,6 +1,7 @@
 package grack.dev.creditpointapp.features.dashboard.ui.kelas
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.FragmentKelasBinding
-import grack.dev.creditpointapp.features.dashboard.ui.inputsiswa.InputPointActivity
+import grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelas
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
@@ -115,12 +117,26 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
         val siswa = arrayAdapter.getItem(position)
 
         if (siswa?.nama != "") {
-          val intent = Intent(activity, InputPointActivity::class.java)
+          val intent = Intent(activity, DetailSiswaActivity::class.java)
           intent.putExtra("key_id_siswa", siswa?.idSiswa)
-          startActivity(intent)
+          startActivityForResult(intent, 222)
         }
       }
     }
+  }
+
+  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    super.onActivityResult(requestCode, resultCode, data)
+    val listenerCode = data?.getStringExtra("listenerCode")
+
+    if (requestCode == 222 && resultCode == Activity.RESULT_OK) {
+      if (listenerCode == "listenerCode") {
+        binding.spinnerSiswa.setSelection(0)
+      } else {
+        Toast.makeText(activity, "listener tidak cocok", Toast.LENGTH_SHORT).show()
+      }
+    }
+
   }
 
 }

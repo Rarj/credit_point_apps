@@ -1177,7 +1177,9 @@ id blocking
 id bottom
 id buttonPanel
 id button_back
+id button_input
 id button_login
+id button_save
 id cancel_action
 id card_data_informasi
 id center
@@ -1328,6 +1330,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner_input
 id spinner_kategori_kelas
 id spinner_kelas
 id spinner_siswa
@@ -1363,6 +1366,7 @@ id text_address_siswa
 id text_alamat_ayah_siswa
 id text_alamat_ibu_siswa
 id text_anak_ke_siswa
+id text_caption_input_point
 id text_caption_kategori_kelas
 id text_caption_kelas
 id text_caption_parent1
@@ -1387,6 +1391,7 @@ id text_penghasilan_ayah_siswa
 id text_penghasilan_ibu_siswa
 id text_place_birth_siswa
 id text_point
+id text_subtitle
 id text_tanggal_informasi
 id text_title
 id textinput_counter
@@ -1471,6 +1476,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dashboard
+layout activity_detail_siswa
 layout activity_input_point
 layout activity_login
 layout activity_splash_screen

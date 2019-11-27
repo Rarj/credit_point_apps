@@ -72,6 +72,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/navigation/mobile_navigation.xml"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_activity_detail_siswa.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_detail_siswa.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_arrow_left.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_arrow_left.png"
     },
