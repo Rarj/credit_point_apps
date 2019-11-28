@@ -1271,6 +1271,7 @@ id nav_data_pelanggaran
 id nav_gallery
 id nav_home
 id nav_host_fragment
+id nav_ranking_siswa
 id nav_view
 id navigation_header_container
 id never
@@ -1296,6 +1297,7 @@ id progress_horizontal
 id radio
 id recycler_data_informasi
 id recycler_data_pelanggaran
+id recycler_rangking_siswa
 id right
 id right_icon
 id right_side
@@ -1500,8 +1502,10 @@ layout design_text_input_password_icon
 layout fragment_data_informasi
 layout fragment_data_pelanggaran
 layout fragment_kelas
+layout fragment_rangking_siswa
 layout item_data_informasi
 layout item_data_pelanggaran
+layout item_rangking_siswa
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_dashboard
@@ -1564,6 +1568,7 @@ string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hello_gallery_second
 string hello_home_second
 string hello_slideshow_second

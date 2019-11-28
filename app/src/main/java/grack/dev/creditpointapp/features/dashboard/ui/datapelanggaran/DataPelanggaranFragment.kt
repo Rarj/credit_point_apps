@@ -41,7 +41,6 @@ class DataPelanggaranFragment : Fragment() {
         }
       }
 
-
     return binding.root
   }
 }

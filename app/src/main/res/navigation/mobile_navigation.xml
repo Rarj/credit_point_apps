@@ -22,4 +22,10 @@
     android:name="grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran.DataPelanggaranFragment"
     android:label="@string/menu_slideshow"
     tools:layout="@layout/fragment_data_pelanggaran" />
+
+  <fragment
+    android:id="@+id/nav_ranking_siswa"
+    android:name="grack.dev.creditpointapp.features.dashboard.ui.rangking.RangkingSiswaFragment"
+    android:label="Rangking Siswa"
+    tools:layout="@layout/fragment_rangking_siswa" />
 </navigation>

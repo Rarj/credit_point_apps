@@ -10,6 +10,7 @@ import grack.dev.creditpointapp.repository.kelas.model.kelas.KelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
+import grack.dev.creditpointapp.repository.rangking.model.RangkingResponse
 import io.reactivex.Observable
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -41,5 +42,8 @@ interface ApiConfig {
 
   @POST("credit-point/input")
   fun requestInputPoint(@Body requestModel: InputPointRequest?): Observable<InputPointResponse>
+
+  @GET("credit-point/rangking")
+  fun requestRangking(): Observable<RangkingResponse>
 
 }

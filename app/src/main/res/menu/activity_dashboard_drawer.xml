@@ -16,5 +16,9 @@
       android:id="@+id/nav_data_pelanggaran"
       android:icon="@drawable/ic_menu_slideshow"
       android:title="@string/menu_slideshow" />
+    <item
+      android:id="@+id/nav_ranking_siswa"
+      android:icon="@drawable/ic_menu_slideshow"
+      android:title="Rangking Siswa" />
   </group>
 </menu>
