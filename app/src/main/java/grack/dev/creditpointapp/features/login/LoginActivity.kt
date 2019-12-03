@@ -3,6 +3,7 @@ package grack.dev.creditpointapp.features.login
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.lifecycle.ViewModelProviders
@@ -52,8 +53,16 @@ class LoginActivity : AppCompatActivity() {
               SharedPref.saveUser(loginViewModel.userPreferences.value, this)
               SharedPref.setUserLoggedIn(this, true)
               stateButtonLogin(true, "Login")
-              startActivity(Intent(this, DashboardActivity::class.java))
-              finish()
+
+              if (it.user?.statusAdmin == "Guru") {
+                startActivity(Intent(this, DashboardActivity::class.java))
+                finish()
+              } else if (it.user?.statusAdmin == "Guru BK") {
+                Toast.makeText(this, "GURU BK DASHBOARD", Toast.LENGTH_SHORT).show()
+//                startActivity(Intent(this, DashboardGuruBK::class.java))
+//                finish()
+              }
+
             } else {
               stateButtonLogin(true, "Login")
               Snackbar.make(
