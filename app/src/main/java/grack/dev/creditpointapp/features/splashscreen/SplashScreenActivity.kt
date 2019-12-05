@@ -15,7 +15,9 @@ class SplashScreenActivity : AppCompatActivity() {
     setContentView(R.layout.activity_splash_screen)
 
     if (SharedPref.getUserLoggedIn(this)!!) {
-      startActivity(Intent(this, DashboardActivity::class.java))
+      val intent = Intent(this, DashboardActivity::class.java)
+      intent.putExtra("privilege", SharedPref.getUser(this).statusAdmin)
+      startActivity(intent)
       finish()
     } else {
       startActivity(Intent(this, LoginActivity::class.java))

@@ -4,6 +4,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/navigation_mobile_navigation_bk.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/navigation/mobile_navigation_bk.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/menu_activity_dashboard_drawer.xml.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/menu/activity_dashboard_drawer.xml"
     },
@@ -52,12 +56,12 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/fragment_kelas.xml"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_nav_header_dashboard.xml.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/nav_header_dashboard.xml"
-    },
-    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_nav_header_dashboard.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/nav_header_dashboard.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -92,6 +96,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_content_dashboard_bk.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/content_dashboard_bk.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_login.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_login.png"
     },
@@ -106,6 +114,10 @@
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_activity_splash_screen.xml.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_fragment_report.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/fragment_report.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
@@ -152,6 +164,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_activity_dashboard_bk.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_dashboard_bk.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/menu_dashboard.xml.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/menu/dashboard.xml"
     },
@@ -178,6 +194,10 @@
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/menu_activity_dashboard_drawer_bk.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/menu/activity_dashboard_drawer_bk.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",

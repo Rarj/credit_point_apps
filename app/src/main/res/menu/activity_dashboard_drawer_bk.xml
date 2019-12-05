@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+      android:id="@+id/nav_report_bk"
+      android:icon="@drawable/ic_menu_camera"
+      android:title="Laporan Pelanggaran" />
+
+    <item
+      android:id="@+id/nav_ruang_konsultasi_bk"
+      android:icon="@drawable/ic_menu_camera"
+      android:title="Ruang Konsultasi" />
+
+    <item
+      android:id="@+id/nav_informasi_bk"
+      android:icon="@drawable/ic_menu_camera"
+      android:title="Data Informasi" />
+
+    <item
+      android:id="@+id/nav_kelas_bk"
+      android:icon="@drawable/ic_menu_camera"
+      android:title="Kelas" />
+
+    <item
+      android:id="@+id/nav_ranking_bk"
+      android:icon="@drawable/ic_menu_camera"
+      android:title="Ranking" />
+  </group>
+</menu>

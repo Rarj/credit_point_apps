@@ -3,7 +3,6 @@ package grack.dev.creditpointapp.features.login
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.lifecycle.ViewModelProviders
@@ -55,12 +54,15 @@ class LoginActivity : AppCompatActivity() {
               stateButtonLogin(true, "Login")
 
               if (it.user?.statusAdmin == "Guru") {
-                startActivity(Intent(this, DashboardActivity::class.java))
+                val intent = Intent(this, DashboardActivity::class.java)
+                intent.putExtra("privilege", "Guru")
+                startActivity(intent)
                 finish()
               } else if (it.user?.statusAdmin == "Guru BK") {
-                Toast.makeText(this, "GURU BK DASHBOARD", Toast.LENGTH_SHORT).show()
-//                startActivity(Intent(this, DashboardGuruBK::class.java))
-//                finish()
+                val intent = Intent(this, DashboardActivity::class.java)
+                intent.putExtra("privilege", "Guru BK")
+                startActivity(intent)
+                finish()
               }
 
             } else {

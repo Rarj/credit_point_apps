@@ -1198,6 +1198,8 @@ id container_data_ibu
 id container_siswa
 id content
 id contentPanel
+id content_dashboard
+id content_dashboard_bk
 id coordinator
 id custom
 id customPanel
@@ -1214,6 +1216,7 @@ id dimensions
 id direct
 id disableHome
 id drawer_layout
+id drawer_layout_bk
 id edit_query
 id end
 id end_padder
@@ -1263,6 +1266,7 @@ id message
 id middle
 id mini
 id mobile_navigation
+id mobile_navigation_bk
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1271,8 +1275,15 @@ id nav_data_pelanggaran
 id nav_gallery
 id nav_home
 id nav_host_fragment
+id nav_host_fragment_bk
+id nav_informasi_bk
+id nav_kelas_bk
+id nav_ranking_bk
 id nav_ranking_siswa
+id nav_report_bk
+id nav_ruang_konsultasi_bk
 id nav_view
+id nav_view_bk
 id navigation_header_container
 id never
 id none
@@ -1478,12 +1489,14 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dashboard
+layout activity_dashboard_bk
 layout activity_detail_siswa
 layout activity_input_point
 layout activity_login
 layout activity_splash_screen
 layout app_bar_dashboard
 layout content_dashboard
+layout content_dashboard_bk
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1503,6 +1516,7 @@ layout fragment_data_informasi
 layout fragment_data_pelanggaran
 layout fragment_kelas
 layout fragment_rangking_siswa
+layout fragment_report
 layout item_data_informasi
 layout item_data_pelanggaran
 layout item_rangking_siswa
@@ -1529,10 +1543,12 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu activity_dashboard_drawer
+menu activity_dashboard_drawer_bk
 menu dashboard
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
+navigation mobile_navigation_bk
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

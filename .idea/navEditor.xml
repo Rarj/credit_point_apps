@@ -66,19 +66,7 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="nav_data_pelanggaran">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="572" />
-                            <option name="y" value="12" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="nav_gallery">
+                  <entry key="nav_informasi_bk">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -90,7 +78,31 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="nav_home">
+                  <entry key="nav_kelas_bk">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="572" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="nav_ranking_bk">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="432" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="nav_report_bk">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -102,13 +114,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="nav_ranking_siswa">
+                  <entry key="nav_ruang_konsultasi_bk">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="12" />
-                            <option name="y" value="432" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                       </LayoutPositions>

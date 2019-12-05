@@ -20,7 +20,15 @@
 
   </com.google.android.material.appbar.AppBarLayout>
 
-  <include layout="@layout/content_dashboard" />
+  <include
+    android:id="@+id/content_dashboard"
+    layout="@layout/content_dashboard"
+    android:visibility="gone" />
+
+  <include
+    android:id="@+id/content_dashboard_bk"
+    layout="@layout/content_dashboard_bk"
+    android:visibility="gone" />
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:id="@+id/fab"

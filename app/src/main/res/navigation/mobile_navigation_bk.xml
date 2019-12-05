@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/mobile_navigation_bk"
+  app:startDestination="@+id/nav_report_bk">
+
+  <fragment
+    android:id="@+id/nav_report_bk"
+    android:name="grack.dev.creditpointapp.features.bk.ui.report.ReportFragment"
+    android:label="Laporan Pelanggaran"
+    tools:layout="@layout/fragment_report" />
+
+  <fragment
+    android:id="@+id/nav_ruang_konsultasi_bk"
+    android:name="grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformasiFragment"
+    android:label="Ruang Konsultasi"
+    tools:layout="@layout/fragment_data_informasi" />
+
+  <fragment
+    android:id="@+id/nav_informasi_bk"
+    android:name="grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformasiFragment"
+    android:label="@string/menu_data_informasi"
+    tools:layout="@layout/fragment_data_informasi" />
+
+  <fragment
+    android:id="@+id/nav_kelas_bk"
+    android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.KelasFragment"
+    android:label="@string/menu_kelas"
+    tools:layout="@layout/fragment_kelas" />
+
+  <fragment
+    android:id="@+id/nav_ranking_bk"
+    android:name="grack.dev.creditpointapp.features.dashboard.ui.rangking.RangkingSiswaFragment"
+    android:label="Rangking Siswa"
+    tools:layout="@layout/fragment_rangking_siswa" />
+
+</navigation>
