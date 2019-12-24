@@ -18,7 +18,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content">
+      android:layout_height="wrap_content"
+      android:padding="8dp">
 
       <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_judul_informasi"
@@ -46,12 +47,12 @@
         android:id="@+id/text_creator_informasi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@{viewModel.createdBy}"
+        android:text="@{`Created by ` + viewModel.createdBy}"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_tanggal_informasi"
-        tools:text="Rio" />
+        tools:text="Created by Siswa Tampan" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

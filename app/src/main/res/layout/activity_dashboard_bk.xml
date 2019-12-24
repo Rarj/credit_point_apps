@@ -20,7 +20,6 @@
     android:layout_gravity="start"
     android:fitsSystemWindows="true"
     android:visibility="visible"
-    app:headerLayout="@layout/nav_header_dashboard"
     app:menu="@menu/activity_dashboard_drawer_bk" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -2,45 +2,53 @@ package grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
+import android.util.Log
 import android.view.View.GONE
-import android.view.ViewGroup
+import android.view.View.VISIBLE
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.FragmentDataPelanggaranBinding
 
-class DataPelanggaranFragment : Fragment() {
+class DataPelanggaranFragment : AppCompatActivity() {
 
   private lateinit var dataPelanggaranViewModel: DataPelanggaranViewModel
   private lateinit var binding: FragmentDataPelanggaranBinding
   private lateinit var dataPelanggaranAdapter: DataPelanggaranAdapter
 
   @SuppressLint("CheckResult")
-  override fun onCreateView(
-    inflater: LayoutInflater,
-    container: ViewGroup?,
-    savedInstanceState: Bundle?
-  ): View? {
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+
     dataPelanggaranViewModel = ViewModelProviders.of(this).get(DataPelanggaranViewModel::class.java)
-    binding = DataBindingUtil.inflate(inflater, R.layout.fragment_data_pelanggaran, container, false)
+    binding = DataBindingUtil.setContentView(this, R.layout.fragment_data_pelanggaran)
     binding.viewModel = dataPelanggaranViewModel
     binding.lifecycleOwner = this
 
-    dataPelanggaranViewModel.listDataPelanggaran()
-      .subscribe {
-        binding.progressHorizontal.visibility = GONE
-        dataPelanggaranAdapter = DataPelanggaranAdapter(activity, dataPelanggaranViewModel.dataPelanggaran.value!!)
-        binding.recyclerDataPelanggaran.apply {
-          layoutManager = LinearLayoutManager(activity)
-          adapter = dataPelanggaranAdapter
-          dataPelanggaranAdapter.notifyDataSetChanged()
-        }
-      }
+    binding.buttonBackPelanggaran.setOnClickListener { finish() }
 
-    return binding.root
+    dataPelanggaranViewModel.listDataPelanggaran()
+      .subscribe({ dataPelanggaran ->
+        binding.progressHorizontal.visibility = GONE
+
+        if (dataPelanggaran != null) {
+          dataPelanggaranAdapter = DataPelanggaranAdapter(this, dataPelanggaranViewModel.dataPelanggaran.value!!)
+          binding.recyclerDataPelanggaran.apply {
+            layoutManager = LinearLayoutManager(this@DataPelanggaranFragment)
+            adapter = dataPelanggaranAdapter
+            dataPelanggaranAdapter.notifyDataSetChanged()
+          }
+
+        } else {
+          binding.imageEmpty.visibility = VISIBLE
+          binding.textEmptyCaption.visibility = VISIBLE
+        }
+
+      }, {
+        Log.e(DataPelanggaranFragment::class.java.name, it.toString())
+      })
+
   }
 }

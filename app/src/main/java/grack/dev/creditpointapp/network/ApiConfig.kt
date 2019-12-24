@@ -11,6 +11,7 @@ import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResp
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
 import grack.dev.creditpointapp.repository.rangking.model.RangkingResponse
+import grack.dev.creditpointapp.repository.report.model.ReportResponse
 import io.reactivex.Observable
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -46,4 +47,12 @@ interface ApiConfig {
   @GET("credit-point/rangking")
   fun requestRangking(): Observable<RangkingResponse>
 
+  @GET("credit-point/report/daily")
+  fun reportDaily(@Query("date") date: String): Observable<ReportResponse>
+
+  @GET("credit-point/report/monthly")
+  fun reportMonthly(@Query("month") month: String): Observable<ReportResponse>
+
+  @GET("credit-point/report/yearly")
+  fun reportYearly(@Query("year") year: String): Observable<ReportResponse>
 }

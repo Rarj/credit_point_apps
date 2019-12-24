@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container_fragment"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".features.newdashboard.MainActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+      android:id="@+id/container_header"
+      android:layout_width="0dp"
+      android:layout_height="190dp"
+      android:background="#303F9F"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_title_caption_header"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="16dp"
+      android:text="Kredit Point"
+      android:textColor="@android:color/white"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_subtitle_caption_header"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:text="SMP SANTO KRISTOFORUS I"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:textColor="@android:color/white"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_title_caption_header" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_header2"
+      android:layout_width="0dp"
+      android:layout_height="120dp"
+      android:layout_margin="20dp"
+      android:background="@drawable/background_rounded_corner"
+      android:elevation="8dp"
+      app:layout_constraintBottom_toBottomOf="@id/container_header"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/container_header"
+      tools:targetApi="lollipop">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_report"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/container_pelanggaran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/image_report"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:padding="8dp"
+          android:src="@drawable/ic_report"
+          app:layout_constraintBottom_toTopOf="@id/text_report"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/text_report"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Report"
+          android:textAlignment="center"
+          android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+          android:textColor="@android:color/black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/image_report" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_pelanggaran"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/container_konsultasi"
+        app:layout_constraintStart_toEndOf="@id/container_report"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/image_pelanggaran"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:padding="8dp"
+          android:src="@drawable/ic_close"
+          app:layout_constraintBottom_toTopOf="@id/text_pelanggaran"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/text_pelanggaran"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Pelanggaran"
+          android:textAlignment="center"
+          android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+          android:textColor="@android:color/black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/image_pelanggaran" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_konsultasi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_pelanggaran"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/image_search"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:padding="8dp"
+          android:src="@drawable/ic_konsultasi"
+          app:layout_constraintBottom_toTopOf="@id/text_konsultasi"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/text_konsultasi"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Konsultasi"
+          android:textAlignment="center"
+          android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+          android:textColor="@android:color/black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/image_search" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_siswa"
+      android:layout_width="0dp"
+      android:layout_height="150dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/background_rounded_corner_siswa"
+      android:elevation="4dp"
+      app:layout_constraintEnd_toStartOf="@id/container_tata_tertib"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/container_header2"
+      tools:targetApi="lollipop">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_caption_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_siswa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_siswa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Siswa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_tata_tertib"
+      android:layout_width="0dp"
+      android:layout_height="200dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="20dp"
+      android:background="@drawable/background_rounded_corner_siswa"
+      android:elevation="4dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/container_siswa"
+      app:layout_constraintTop_toBottomOf="@id/container_header2"
+      tools:targetApi="lollipop">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_caption_tata_tertib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_file"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_tata_tertib"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Tata Tertib"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_ranking"
+      android:layout_width="0dp"
+      android:layout_height="180dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/background_rounded_corner_siswa"
+      android:elevation="4dp"
+      app:layout_constraintEnd_toStartOf="@id/container_info"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/container_siswa"
+      tools:targetApi="lollipop">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_caption_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_ranking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_ranking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Ranking Poin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_info"
+      android:layout_width="0dp"
+      android:layout_height="130dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="20dp"
+      android:background="@drawable/background_rounded_corner_siswa"
+      android:elevation="4dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/container_ranking"
+      app:layout_constraintTop_toBottomOf="@id/container_tata_tertib"
+      tools:targetApi="lollipop">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_caption_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Informasi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <com.google.android.material.bottomappbar.BottomAppBar
+    android:id="@+id/bottom_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    app:backgroundTint="@color/colorPrimary"
+    app:fabAlignmentMode="end"
+    app:menu="@menu/bottom_app_bar_menu" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_input"
+    app:fabSize="normal"
+    app:layout_anchor="@id/bottom_app_bar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -14,8 +14,13 @@ public class FragmentDataPelanggaranBindingImpl extends FragmentDataPelanggaranB
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.progress_horizontal, 1);
-        sViewsWithIds.put(R.id.recycler_data_pelanggaran, 2);
+        sViewsWithIds.put(R.id.toolbar_pelanggaran, 1);
+        sViewsWithIds.put(R.id.button_back_pelanggaran, 2);
+        sViewsWithIds.put(R.id.text_title_report, 3);
+        sViewsWithIds.put(R.id.progress_horizontal, 4);
+        sViewsWithIds.put(R.id.recycler_data_pelanggaran, 5);
+        sViewsWithIds.put(R.id.image_empty, 6);
+        sViewsWithIds.put(R.id.text_empty_caption, 7);
     }
     // views
     // variables
@@ -24,13 +29,18 @@ public class FragmentDataPelanggaranBindingImpl extends FragmentDataPelanggaranB
     // Inverse Binding Event Handlers
 
     public FragmentDataPelanggaranBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
     }
     private FragmentDataPelanggaranBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.ImageButton) bindings[2]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
-            , (android.widget.ProgressBar) bindings[1]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[6]
+            , (android.widget.ProgressBar) bindings[4]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
             );
         this.container.setTag(null);
         setRootTag(root);

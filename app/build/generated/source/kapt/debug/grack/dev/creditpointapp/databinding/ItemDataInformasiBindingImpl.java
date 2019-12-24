@@ -93,6 +93,7 @@ public class ItemDataInformasiBindingImpl extends ItemDataInformasiBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
+        java.lang.String javaLangStringCreatedByViewModelCreatedBy = null;
         java.lang.String viewModelDate = null;
         grack.dev.creditpointapp.repository.datainformasi.model.Information viewModel = mViewModel;
         java.lang.String viewModelJudulInformation = null;
@@ -110,12 +111,16 @@ public class ItemDataInformasiBindingImpl extends ItemDataInformasiBinding  {
                     // read viewModel.createdBy
                     viewModelCreatedBy = viewModel.getCreatedBy();
                 }
+
+
+                // read ("Created by ") + (viewModel.createdBy)
+                javaLangStringCreatedByViewModelCreatedBy = ("Created by ") + (viewModelCreatedBy);
         }
         // batch finished
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textCreatorInformasi, viewModelCreatedBy);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textCreatorInformasi, javaLangStringCreatedByViewModelCreatedBy);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textJudulInformasi, viewModelJudulInformation);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textTanggalInformasi, viewModelDate);
         }

@@ -16,6 +16,8 @@ public class FragmentDataInformasiBindingImpl extends FragmentDataInformasiBindi
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.progress_horizontal, 1);
         sViewsWithIds.put(R.id.recycler_data_informasi, 2);
+        sViewsWithIds.put(R.id.image_empty, 3);
+        sViewsWithIds.put(R.id.text_empty_caption, 4);
     }
     // views
     @NonNull
@@ -26,12 +28,14 @@ public class FragmentDataInformasiBindingImpl extends FragmentDataInformasiBindi
     // Inverse Binding Event Handlers
 
     public FragmentDataInformasiBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
     }
     private FragmentDataInformasiBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[3]
             , (android.widget.ProgressBar) bindings[1]
             , (androidx.recyclerview.widget.RecyclerView) bindings[2]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

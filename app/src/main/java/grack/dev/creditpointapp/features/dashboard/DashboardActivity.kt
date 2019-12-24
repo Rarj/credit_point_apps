@@ -17,6 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import grack.dev.creditpointapp.R
+import grack.dev.creditpointapp.preferences.SharedPref
 import kotlinx.android.synthetic.main.app_bar_dashboard.*
 
 class DashboardActivity : AppCompatActivity() {
@@ -37,6 +38,7 @@ class DashboardActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     privilege = intent.getStringExtra("privilege")
+    val user = SharedPref.getUser(this)
 
     if (privilege == "Guru") {
       setContentView(R.layout.activity_dashboard)

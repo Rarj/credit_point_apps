@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -18,19 +20,28 @@ import java.lang.Object;
 
 public abstract class FragmentDataInformasiBinding extends ViewDataBinding {
   @NonNull
+  public final AppCompatImageView imageEmpty;
+
+  @NonNull
   public final ProgressBar progressHorizontal;
 
   @NonNull
   public final RecyclerView recyclerDataInformasi;
 
+  @NonNull
+  public final AppCompatTextView textEmptyCaption;
+
   @Bindable
   protected DataInformasiViewModel mViewModel;
 
   protected FragmentDataInformasiBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ProgressBar progressHorizontal, RecyclerView recyclerDataInformasi) {
+      AppCompatImageView imageEmpty, ProgressBar progressHorizontal,
+      RecyclerView recyclerDataInformasi, AppCompatTextView textEmptyCaption) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.imageEmpty = imageEmpty;
     this.progressHorizontal = progressHorizontal;
     this.recyclerDataInformasi = recyclerDataInformasi;
+    this.textEmptyCaption = textEmptyCaption;
   }
 
   public abstract void setViewModel(@Nullable DataInformasiViewModel viewModel);

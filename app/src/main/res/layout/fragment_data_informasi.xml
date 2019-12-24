@@ -33,6 +33,31 @@
       app:layout_constraintTop_toBottomOf="@id/progress_horizontal"
       tools:listitem="@layout/item_data_informasi" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/image_empty"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_empty_data"
+      android:visibility="gone"
+      app:layout_constraintBottom_toTopOf="@id/text_empty_caption"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_empty_caption"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Tidak ada data yang dapat ditampilkan"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/image_empty" />
+
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

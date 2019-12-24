@@ -93,27 +93,45 @@ public class ItemDataPelanggaranBindingImpl extends ItemDataPelanggaranBinding  
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
+        java.lang.String viewModelKategori = null;
+        java.lang.String viewModelKategoriJavaLangString = null;
         java.lang.String viewModelKeteranganPoint = null;
         java.lang.String viewModelPoint = null;
         grack.dev.creditpointapp.repository.datapelanggaran.model.Point viewModel = mViewModel;
+        java.lang.String viewModelKategoriJavaLangStringViewModelPoint = null;
+        java.lang.String viewModelKategoriJavaLangStringViewModelPointJavaLangStringPoint = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
 
 
                 if (viewModel != null) {
+                    // read viewModel.kategori
+                    viewModelKategori = viewModel.getKategori();
                     // read viewModel.keteranganPoint
                     viewModelKeteranganPoint = viewModel.getKeteranganPoint();
                     // read viewModel.point
                     viewModelPoint = viewModel.getPoint();
                 }
+
+
+                // read (viewModel.kategori) + (" ")
+                viewModelKategoriJavaLangString = (viewModelKategori) + (" ");
+
+
+                // read ((viewModel.kategori) + (" ")) + (viewModel.point)
+                viewModelKategoriJavaLangStringViewModelPoint = (viewModelKategoriJavaLangString) + (viewModelPoint);
+
+
+                // read (((viewModel.kategori) + (" ")) + (viewModel.point)) + (" point")
+                viewModelKategoriJavaLangStringViewModelPointJavaLangStringPoint = (viewModelKategoriJavaLangStringViewModelPoint) + (" point");
         }
         // batch finished
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textKeteranganPoint, viewModelKeteranganPoint);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textPoint, viewModelPoint);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textPoint, viewModelKategoriJavaLangStringViewModelPointJavaLangStringPoint);
         }
     }
     // Listener Stub Implementations

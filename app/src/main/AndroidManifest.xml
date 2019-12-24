@@ -3,6 +3,7 @@
   package="grack.dev.creditpointapp">
 
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
 
   <application
     android:allowBackup="true"
@@ -11,8 +12,6 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".features.dashboard.ui.inputpoint.InputPointActivity"></activity>
-    <activity android:name=".features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
     <activity
       android:name=".features.splashscreen.SplashScreenActivity"
       android:theme="@style/AppTheme.Splash">
@@ -22,8 +21,15 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+
     <activity android:name=".features.login.LoginActivity" />
     <activity android:name=".features.dashboard.DashboardActivity" />
+    <activity android:name=".features.bk.ui.report.ReportActivity" />
+    <activity android:name=".features.dashboard.ui.datapelanggaran.DataPelanggaranFragment" />
+    <activity android:name=".features.newdashboard.MainActivity" />
+    <activity android:name=".features.bk.ui.report.daily.ReportDailyActivity" />
+    <activity android:name=".features.dashboard.ui.inputpoint.InputPointActivity" />
+    <activity android:name=".features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
   </application>
 
 </manifest>

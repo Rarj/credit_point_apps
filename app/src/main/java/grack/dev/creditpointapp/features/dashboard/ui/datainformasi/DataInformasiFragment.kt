@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -30,6 +31,15 @@ class DataInformasiFragment : Fragment() {
 
     homeViewViewModel.listInformasi()
       .subscribe {
+
+        if (it.information.isEmpty()) {
+          binding.imageEmpty.visibility = VISIBLE
+          binding.textEmptyCaption.visibility = VISIBLE
+        } else {
+          binding.imageEmpty.visibility = GONE
+          binding.textEmptyCaption.visibility = GONE
+        }
+
         binding.progressHorizontal.visibility = GONE
 
         adapterDataInformasi = DataInformasiAdapter(activity!!, it.information.toMutableList())

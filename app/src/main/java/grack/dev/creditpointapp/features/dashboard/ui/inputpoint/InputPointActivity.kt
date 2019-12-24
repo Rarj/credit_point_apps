@@ -38,6 +38,10 @@ class InputPointActivity : AppCompatActivity() {
     binding.textSubtitle.text = intentNamaSiswa
     binding.textTitle.text = "Input Point"
 
+    binding.buttonBack.setOnClickListener {
+      finish()
+    }
+
     viewModel.loadPoint()
       .subscribe {
         val pointList = ArrayList<Point>()
@@ -58,9 +62,13 @@ class InputPointActivity : AppCompatActivity() {
 
           override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
             idPoint = arrayAdapter.getItem(position)?.idPoint ?: ""
+
+            binding.buttonSave.isEnabled = binding.spinnerInput.selectedItem != ""
           }
         }
       }
+
+    binding.buttonSave.isEnabled = false
 
     binding.buttonSave.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
       .subscribe {

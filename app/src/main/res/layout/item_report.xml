@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <data>
+    <variable
+      name="model"
+      type="grack.dev.creditpointapp.repository.report.model.CreditPoint" />
+  </data>
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#F1F1F1"
+    android:padding="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_name"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:text="@{model.nama}"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintEnd_toStartOf="@id/button_attachment"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Siswa Ganteng" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_kategori"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:text="@{model.kategori + ` - ` + model.keteranganPoint + ` - ` + model.point}"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      app:layout_constraintEnd_toStartOf="@id/button_attachment"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_name"
+      tools:text="Penambahan - Juara Lomba - 35" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_date_created"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="8dp"
+      android:text="@{`Date created : ` + model.createdDate}"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      app:layout_constraintEnd_toStartOf="@id/button_attachment"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_kategori"
+      tools:text="Date created : 2019-01-01" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+      android:id="@+id/button_attachment"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:background="@null"
+      android:src="@drawable/ic_attachment_file"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

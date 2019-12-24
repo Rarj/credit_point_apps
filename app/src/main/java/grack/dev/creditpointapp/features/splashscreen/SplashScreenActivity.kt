@@ -4,8 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import grack.dev.creditpointapp.R
-import grack.dev.creditpointapp.features.dashboard.DashboardActivity
 import grack.dev.creditpointapp.features.login.LoginActivity
+import grack.dev.creditpointapp.features.newdashboard.MainActivity
 import grack.dev.creditpointapp.preferences.SharedPref
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class SplashScreenActivity : AppCompatActivity() {
     setContentView(R.layout.activity_splash_screen)
 
     if (SharedPref.getUserLoggedIn(this)!!) {
-      val intent = Intent(this, DashboardActivity::class.java)
+      val intent = Intent(this, MainActivity::class.java)
       intent.putExtra("privilege", SharedPref.getUser(this).statusAdmin)
       startActivity(intent)
       finish()

@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/Applications/Android%20Studio%204.0%20Preview.app/Contents/plugins/android/lib/android.jar!/images/material/icons/materialicons/arrow_back_ios/baseline_arrow_back_ios_24.xml" />
+                                      <entry key="url" value="jar:file:/Applications/Android%20Studio%204.0%20Preview.app/Contents/plugins/android/lib/android.jar!/images/material/icons/materialicons/arrow_back/baseline_arrow_back_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +28,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_arrow_left" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/../../Images/undraw_security_o890.svg" />
+                            <entry key="outputName" value="ic_konsultasi" />
+                            <entry key="sourceFile" value="$USER_HOME$/Pictures/untitled folder/email.svg" />
                           </map>
                         </option>
                       </PersistentState>

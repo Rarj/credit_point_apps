@@ -1,4 +1,4 @@
-#Thu Dec 05 19:29:50 WIB 2019
+#Tue Dec 24 17:43:39 WIB 2019
 base.0=/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

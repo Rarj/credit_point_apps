@@ -4,9 +4,12 @@ package grack.dev.creditpointapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
@@ -19,7 +22,13 @@ import java.lang.Object;
 
 public abstract class FragmentDataPelanggaranBinding extends ViewDataBinding {
   @NonNull
+  public final ImageButton buttonBackPelanggaran;
+
+  @NonNull
   public final ConstraintLayout container;
+
+  @NonNull
+  public final AppCompatImageView imageEmpty;
 
   @NonNull
   public final ProgressBar progressHorizontal;
@@ -27,16 +36,32 @@ public abstract class FragmentDataPelanggaranBinding extends ViewDataBinding {
   @NonNull
   public final RecyclerView recyclerDataPelanggaran;
 
+  @NonNull
+  public final AppCompatTextView textEmptyCaption;
+
+  @NonNull
+  public final AppCompatTextView textTitleReport;
+
+  @NonNull
+  public final ConstraintLayout toolbarPelanggaran;
+
   @Bindable
   protected DataPelanggaranViewModel mViewModel;
 
   protected FragmentDataPelanggaranBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, ConstraintLayout container, ProgressBar progressHorizontal,
-      RecyclerView recyclerDataPelanggaran) {
+      int _localFieldCount, ImageButton buttonBackPelanggaran, ConstraintLayout container,
+      AppCompatImageView imageEmpty, ProgressBar progressHorizontal,
+      RecyclerView recyclerDataPelanggaran, AppCompatTextView textEmptyCaption,
+      AppCompatTextView textTitleReport, ConstraintLayout toolbarPelanggaran) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonBackPelanggaran = buttonBackPelanggaran;
     this.container = container;
+    this.imageEmpty = imageEmpty;
     this.progressHorizontal = progressHorizontal;
     this.recyclerDataPelanggaran = recyclerDataPelanggaran;
+    this.textEmptyCaption = textEmptyCaption;
+    this.textTitleReport = textTitleReport;
+    this.toolbarPelanggaran = toolbarPelanggaran;
   }
 
   public abstract void setViewModel(@Nullable DataPelanggaranViewModel viewModel);

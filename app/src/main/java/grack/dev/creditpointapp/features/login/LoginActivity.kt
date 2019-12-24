@@ -11,7 +11,7 @@ import com.jakewharton.rxbinding3.view.clicks
 import com.jakewharton.rxbinding3.widget.afterTextChangeEvents
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.ActivityLoginBinding
-import grack.dev.creditpointapp.features.dashboard.DashboardActivity
+import grack.dev.creditpointapp.features.newdashboard.MainActivity
 import grack.dev.creditpointapp.preferences.SharedPref
 import java.util.concurrent.TimeUnit
 
@@ -54,12 +54,12 @@ class LoginActivity : AppCompatActivity() {
               stateButtonLogin(true, "Login")
 
               if (it.user?.statusAdmin == "Guru") {
-                val intent = Intent(this, DashboardActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("privilege", "Guru")
                 startActivity(intent)
                 finish()
               } else if (it.user?.statusAdmin == "Guru BK") {
-                val intent = Intent(this, DashboardActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("privilege", "Guru BK")
                 startActivity(intent)
                 finish()

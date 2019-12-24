@@ -20,8 +20,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.inputpoint.InputPointActivity" />
-        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
         <activity
             android:name="grack.dev.creditpointapp.features.splashscreen.SplashScreenActivity"
             android:theme="@style/AppTheme.Splash" >
@@ -33,6 +31,12 @@
         </activity>
         <activity android:name="grack.dev.creditpointapp.features.login.LoginActivity" />
         <activity android:name="grack.dev.creditpointapp.features.dashboard.DashboardActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.bk.ui.report.ReportActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran.DataPelanggaranFragment" />
+        <activity android:name="grack.dev.creditpointapp.features.newdashboard.MainActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.bk.ui.report.daily.ReportDailyActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.inputpoint.InputPointActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
