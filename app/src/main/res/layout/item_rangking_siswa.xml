@@ -36,13 +36,13 @@
         android:id="@+id/text_point"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@{model.sisaPoint}"
+        android:text="@{`Poin tersisa ` + model.sisaPoint}"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_nama_siswa"
-        tools:text="2222" />
+        tools:text="Poin tersisa 300" />
     </androidx.constraintlayout.widget.ConstraintLayout>
   </com.google.android.material.card.MaterialCardView>
 </layout>

@@ -8,6 +8,7 @@ import grack.dev.creditpointapp.repository.inputpoint.model.InputPointResponse
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.kelas.KelasResponse
 import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
+import grack.dev.creditpointapp.repository.konsultasi.model.KonsultasiResponse
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
 import grack.dev.creditpointapp.repository.rangking.model.RangkingResponse
@@ -55,4 +56,7 @@ interface ApiConfig {
 
   @GET("credit-point/report/yearly")
   fun reportYearly(@Query("year") year: String): Observable<ReportResponse>
+
+  @GET("api/seluruhsiswa/nihyaaaa")
+  fun konsultasiSiswa(): Observable<KonsultasiResponse>
 }

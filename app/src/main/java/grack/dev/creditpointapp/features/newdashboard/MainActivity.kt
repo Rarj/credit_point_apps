@@ -5,11 +5,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View.GONE
 import android.view.View.VISIBLE
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.jakewharton.rxbinding3.view.clicks
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.features.bk.ui.report.ReportFragment
+import grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformasiFragment
 import grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran.DataPelanggaranFragment
+import grack.dev.creditpointapp.features.dashboard.ui.kelas.KelasFragment
+import grack.dev.creditpointapp.features.dashboard.ui.rangking.RangkingSiswaFragment
 import grack.dev.creditpointapp.preferences.SharedPref
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.concurrent.TimeUnit
@@ -42,6 +46,26 @@ class MainActivity : AppCompatActivity() {
     container_pelanggaran.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
       .subscribe {
         startActivity(Intent(this, DataPelanggaranFragment::class.java))
+      }
+
+    container_konsultasi.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
+      .subscribe {
+        Toast.makeText(this, "Wait for backend to provide the datas", Toast.LENGTH_SHORT).show()
+      }
+
+    container_ranking.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
+      .subscribe {
+        startActivity(Intent(this, RangkingSiswaFragment::class.java))
+      }
+
+    container_info.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
+      .subscribe {
+        startActivity(Intent(this, DataInformasiFragment::class.java))
+      }
+
+    fab.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
+      .subscribe {
+        startActivity(Intent(this, KelasFragment::class.java))
       }
 
     bottom_app_bar.setOnMenuItemClickListener {

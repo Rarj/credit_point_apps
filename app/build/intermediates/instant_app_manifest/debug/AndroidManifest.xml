@@ -10,6 +10,7 @@
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -38,6 +39,10 @@
         <activity android:name="grack.dev.creditpointapp.features.bk.ui.report.daily.ReportDailyActivity" />
         <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.inputpoint.InputPointActivity" />
         <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.newdashboard.konsultasi.KonsultasiActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.KelasFragment" />
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.rangking.RangkingSiswaFragment" />
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformasiFragment" />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

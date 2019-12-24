@@ -99,6 +99,7 @@ public class ItemRangkingSiswaBindingImpl extends ItemRangkingSiswaBinding  {
         java.lang.String modelNamaJavaLangStringModelNamaKelas = null;
         java.lang.String modelSisaPoint = null;
         java.lang.String modelNama = null;
+        java.lang.String javaLangStringPoinTersisaModelSisaPoint = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
@@ -114,6 +115,8 @@ public class ItemRangkingSiswaBindingImpl extends ItemRangkingSiswaBinding  {
                 }
 
 
+                // read ("Poin tersisa ") + (model.sisaPoint)
+                javaLangStringPoinTersisaModelSisaPoint = ("Poin tersisa ") + (modelSisaPoint);
                 // read (model.nama) + (" - ")
                 modelNamaJavaLangString = (modelNama) + (" - ");
 
@@ -126,7 +129,7 @@ public class ItemRangkingSiswaBindingImpl extends ItemRangkingSiswaBinding  {
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textNamaSiswa, modelNamaJavaLangStringModelNamaKelas);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textPoint, modelSisaPoint);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textPoint, javaLangStringPoinTersisaModelSisaPoint);
         }
     }
     // Listener Stub Implementations

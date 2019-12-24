@@ -11,7 +11,7 @@ class DataPelanggaranViewModel : ViewModel() {
   var dataPelanggaran = MutableLiveData<DataPelanggaran>()
 
   fun listDataPelanggaran(): Observable<DataPelanggaran> {
-    return DataPelanggaranRepository.provideDataPelanggaramn()
+    return DataPelanggaranRepository.provideDataPelanggaran()
       .map {
         dataPelanggaran.value = it
         it

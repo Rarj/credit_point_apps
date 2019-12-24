@@ -4,11 +4,13 @@ package grack.dev.creditpointapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -19,6 +21,9 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentDataInformasiBinding extends ViewDataBinding {
+  @NonNull
+  public final ImageButton buttonBack;
+
   @NonNull
   public final AppCompatImageView imageEmpty;
 
@@ -31,17 +36,27 @@ public abstract class FragmentDataInformasiBinding extends ViewDataBinding {
   @NonNull
   public final AppCompatTextView textEmptyCaption;
 
+  @NonNull
+  public final AppCompatTextView textTitle;
+
+  @NonNull
+  public final ConstraintLayout toolbar;
+
   @Bindable
   protected DataInformasiViewModel mViewModel;
 
   protected FragmentDataInformasiBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppCompatImageView imageEmpty, ProgressBar progressHorizontal,
-      RecyclerView recyclerDataInformasi, AppCompatTextView textEmptyCaption) {
+      ImageButton buttonBack, AppCompatImageView imageEmpty, ProgressBar progressHorizontal,
+      RecyclerView recyclerDataInformasi, AppCompatTextView textEmptyCaption,
+      AppCompatTextView textTitle, ConstraintLayout toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonBack = buttonBack;
     this.imageEmpty = imageEmpty;
     this.progressHorizontal = progressHorizontal;
     this.recyclerDataInformasi = recyclerDataInformasi;
     this.textEmptyCaption = textEmptyCaption;
+    this.textTitle = textTitle;
+    this.toolbar = toolbar;
   }
 
   public abstract void setViewModel(@Nullable DataInformasiViewModel viewModel);

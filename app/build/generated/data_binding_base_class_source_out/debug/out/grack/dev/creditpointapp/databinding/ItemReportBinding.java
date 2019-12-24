@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
@@ -17,9 +16,6 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ItemReportBinding extends ViewDataBinding {
-  @NonNull
-  public final AppCompatImageButton buttonAttachment;
-
   @NonNull
   public final AppCompatTextView textDateCreated;
 
@@ -33,10 +29,9 @@ public abstract class ItemReportBinding extends ViewDataBinding {
   protected CreditPoint mModel;
 
   protected ItemReportBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppCompatImageButton buttonAttachment, AppCompatTextView textDateCreated,
-      AppCompatTextView textKategori, AppCompatTextView textName) {
+      AppCompatTextView textDateCreated, AppCompatTextView textKategori,
+      AppCompatTextView textName) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.buttonAttachment = buttonAttachment;
     this.textDateCreated = textDateCreated;
     this.textKategori = textKategori;
     this.textName = textName;

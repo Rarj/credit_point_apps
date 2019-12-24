@@ -2,37 +2,35 @@ package grack.dev.creditpointapp.features.dashboard.ui.datainformasi
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
+import android.util.Log
 import android.view.View.GONE
 import android.view.View.VISIBLE
-import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.FragmentDataInformasiBinding
 
-class DataInformasiFragment : Fragment() {
+class DataInformasiFragment : AppCompatActivity() {
 
   private lateinit var homeViewViewModel: DataInformasiViewModel
   private lateinit var binding: FragmentDataInformasiBinding
   private lateinit var adapterDataInformasi: DataInformasiAdapter
 
   @SuppressLint("CheckResult")
-  override fun onCreateView(
-    inflater: LayoutInflater,
-    container: ViewGroup?,
-    savedInstanceState: Bundle?
-  ): View? {
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+
     homeViewViewModel = ViewModelProviders.of(this).get(DataInformasiViewModel::class.java)
-    binding = DataBindingUtil.inflate(inflater, R.layout.fragment_data_informasi, container, false)
+    binding = DataBindingUtil.setContentView(this, R.layout.fragment_data_informasi)
+
+    binding.buttonBack.setOnClickListener { finish() }
 
     homeViewViewModel.listInformasi()
-      .subscribe {
-
-        if (it.information.isEmpty()) {
+      .subscribe({ dataInformasi ->
+        if (dataInformasi.information.isEmpty()) {
           binding.imageEmpty.visibility = VISIBLE
           binding.textEmptyCaption.visibility = VISIBLE
         } else {
@@ -42,16 +40,16 @@ class DataInformasiFragment : Fragment() {
 
         binding.progressHorizontal.visibility = GONE
 
-        adapterDataInformasi = DataInformasiAdapter(activity!!, it.information.toMutableList())
+        adapterDataInformasi = DataInformasiAdapter(this, dataInformasi.information.toMutableList())
 
         binding.recyclerDataInformasi.apply {
-          layoutManager = LinearLayoutManager(activity)
+          layoutManager = LinearLayoutManager(this@DataInformasiFragment)
           adapter = adapterDataInformasi
           adapterDataInformasi.notifyDataSetChanged()
         }
-
-      }
-
-    return binding.root
+      }, {
+        Log.e("AKSDHAJKSHAS", it.toString())
+        Toast.makeText(this, "Terjadi kesalahan. Silahkan coba lagi, yaa.", Toast.LENGTH_SHORT).show()
+      })
   }
 }

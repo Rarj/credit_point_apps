@@ -4,14 +4,12 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.FragmentKelasBinding
@@ -21,21 +19,21 @@ import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKel
 import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResponse
 import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.Siswa
 
-class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
+class KelasFragment : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
   private lateinit var kelasViewModel: KelasViewModel
   private lateinit var binding: FragmentKelasBinding
 
   @SuppressLint("CheckResult")
-  override fun onCreateView(
-    inflater: LayoutInflater,
-    container: ViewGroup?,
-    savedInstanceState: Bundle?
-  ): View? {
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+
     kelasViewModel = ViewModelProviders.of(this).get(KelasViewModel::class.java)
-    binding = DataBindingUtil.inflate(inflater, R.layout.fragment_kelas, container, false)
+    binding = DataBindingUtil.setContentView(this, R.layout.fragment_kelas)
 
     binding.spinnerKelas.onItemSelectedListener = this
+
+    binding.buttonBackInput.setOnClickListener { finish() }
 
     kelasViewModel.listKelas()
       .subscribe {
@@ -45,12 +43,10 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
           kelasList.add(kelas?.kelas.toString())
         }
 
-        val arrayAdapter = ArrayAdapter<String>(activity!!, android.R.layout.simple_spinner_item, kelasList)
+        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, kelasList)
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerKelas.adapter = arrayAdapter
       }
-
-    return binding.root
   }
 
   override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -72,7 +68,7 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
       kategoriKelasList.add(kategoriKelas)
     }
 
-    val arrayAdapter = ArrayAdapter<KategoriKelas>(activity!!, android.R.layout.simple_spinner_item, kategoriKelasList)
+    val arrayAdapter = ArrayAdapter<KategoriKelas>(this, android.R.layout.simple_spinner_item, kategoriKelasList)
     arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
     binding.spinnerKategoriKelas.adapter = arrayAdapter
 
@@ -103,7 +99,7 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
       dataKelasList.add(siswa)
     }
 
-    val arrayAdapter = ArrayAdapter<Siswa>(activity!!, android.R.layout.simple_spinner_item, dataKelasList)
+    val arrayAdapter = ArrayAdapter<Siswa>(this, android.R.layout.simple_spinner_item, dataKelasList)
     arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
     binding.spinnerSiswa.adapter = arrayAdapter
 
@@ -117,7 +113,7 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
         val siswa = arrayAdapter.getItem(position)
 
         if (siswa?.nama != "") {
-          val intent = Intent(activity, DetailSiswaActivity::class.java)
+          val intent = Intent(this@KelasFragment, DetailSiswaActivity::class.java)
           intent.putExtra("key_id_siswa", siswa?.idSiswa)
           startActivityForResult(intent, 222)
         }
@@ -133,7 +129,7 @@ class KelasFragment : Fragment(), AdapterView.OnItemSelectedListener {
       if (listenerCode == "listenerCode") {
         binding.spinnerSiswa.setSelection(0)
       } else {
-        Toast.makeText(activity, "listener tidak cocok", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "listener tidak cocok", Toast.LENGTH_SHORT).show()
       }
     }
 

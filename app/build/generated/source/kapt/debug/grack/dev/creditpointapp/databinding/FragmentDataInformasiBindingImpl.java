@@ -14,10 +14,13 @@ public class FragmentDataInformasiBindingImpl extends FragmentDataInformasiBindi
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.progress_horizontal, 1);
-        sViewsWithIds.put(R.id.recycler_data_informasi, 2);
-        sViewsWithIds.put(R.id.image_empty, 3);
-        sViewsWithIds.put(R.id.text_empty_caption, 4);
+        sViewsWithIds.put(R.id.toolbar, 1);
+        sViewsWithIds.put(R.id.button_back, 2);
+        sViewsWithIds.put(R.id.text_title, 3);
+        sViewsWithIds.put(R.id.progress_horizontal, 4);
+        sViewsWithIds.put(R.id.recycler_data_informasi, 5);
+        sViewsWithIds.put(R.id.image_empty, 6);
+        sViewsWithIds.put(R.id.text_empty_caption, 7);
     }
     // views
     @NonNull
@@ -28,14 +31,17 @@ public class FragmentDataInformasiBindingImpl extends FragmentDataInformasiBindi
     // Inverse Binding Event Handlers
 
     public FragmentDataInformasiBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
     }
     private FragmentDataInformasiBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.appcompat.widget.AppCompatImageView) bindings[3]
-            , (android.widget.ProgressBar) bindings[1]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (android.widget.ImageButton) bindings[2]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[6]
+            , (android.widget.ProgressBar) bindings[4]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

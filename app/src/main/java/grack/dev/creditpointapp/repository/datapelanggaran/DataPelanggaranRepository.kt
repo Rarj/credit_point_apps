@@ -9,7 +9,7 @@ import io.reactivex.schedulers.Schedulers
 
 object DataPelanggaranRepository {
 
-  fun provideDataPelanggaramn(): Observable<DataPelanggaran> {
+  fun provideDataPelanggaran(): Observable<DataPelanggaran> {
     val service = RetrofitInstance.retrofitInstance().create(ApiConfig::class.java)
     return service.requestDataPelanggaran()
       .subscribeOn(Schedulers.io())

@@ -25,6 +25,9 @@ public abstract class ActivityReportDailyBinding extends ViewDataBinding {
   public final ImageButton buttonBackReport;
 
   @NonNull
+  public final AppCompatImageView buttonExport;
+
+  @NonNull
   public final MaterialButton buttonPickDate;
 
   @NonNull
@@ -49,12 +52,13 @@ public abstract class ActivityReportDailyBinding extends ViewDataBinding {
   protected ReportDailyViewModel mViewModel;
 
   protected ActivityReportDailyBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton buttonBackReport, MaterialButton buttonPickDate, AppCompatImageView imageEmpty,
-      RecyclerView recyclerReportDaily, AppCompatTextView textDate,
+      ImageButton buttonBackReport, AppCompatImageView buttonExport, MaterialButton buttonPickDate,
+      AppCompatImageView imageEmpty, RecyclerView recyclerReportDaily, AppCompatTextView textDate,
       AppCompatTextView textEmptyCaption, AppCompatTextView textTitleReport,
       ConstraintLayout toolbarReport) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonBackReport = buttonBackReport;
+    this.buttonExport = buttonExport;
     this.buttonPickDate = buttonPickDate;
     this.imageEmpty = imageEmpty;
     this.recyclerReportDaily = recyclerReportDaily;

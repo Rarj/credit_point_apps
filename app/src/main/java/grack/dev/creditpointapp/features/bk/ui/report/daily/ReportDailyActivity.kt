@@ -3,9 +3,12 @@ package grack.dev.creditpointapp.features.bk.ui.report.daily
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.app.ProgressDialog
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View.GONE
 import android.view.View.VISIBLE
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
@@ -25,6 +28,9 @@ class ReportDailyActivity : AppCompatActivity() {
   lateinit var binding: ActivityReportDailyBinding
   lateinit var adapterReportDaily: ReportDailyAdapter
 
+  private var reportResult: String = ""
+  private var isReportEmpty = false
+
   @SuppressLint("CheckResult", "SimpleDateFormat")
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -34,15 +40,65 @@ class ReportDailyActivity : AppCompatActivity() {
     viewModel = ViewModelProviders.of(this).get(ReportDailyViewModel::class.java)
     binding = DataBindingUtil.setContentView(this, R.layout.activity_report_daily)
 
+    binding.buttonExport.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
+      .subscribe {
+        if (intent == "daily") {
+          if (viewModel.dateSelected.value.toString() == "null") {
+            Toast.makeText(this, "Kamu belum memilih data yang ingin di Export.", Toast.LENGTH_SHORT).show()
+          } else {
+            var urlExport = ""
+            urlExport = if (intent == "daily") {
+              "https://credit-point.desa-kayu-bongkok.net/credit_point/report/${reportResult}-result?date=${binding.textDate.text}&status=export"
+            } else {
+              "https://credit-point.desa-kayu-bongkok.net/credit_point/report/${reportResult}-result?${reportResult}=${binding.textDate.text}&status=export"
+            }
+            export(urlExport)
+          }
+        } else if (intent == "monthly") {
+          if (viewModel.monthSelected.value.toString() == "null") {
+            Toast.makeText(this, "Kamu belum memilih data yang ingin di Export.", Toast.LENGTH_SHORT).show()
+          } else {
+            var urlExport = ""
+            urlExport = if (intent == "daily") {
+              "https://credit-point.desa-kayu-bongkok.net/credit_point/report/${reportResult}-result?date=${binding.textDate.text}&status=export"
+            } else {
+              "https://credit-point.desa-kayu-bongkok.net/credit_point/report/${reportResult}-result?${reportResult}=${binding.textDate.text}&status=export"
+            }
+            export(urlExport)
+          }
+        } else if (intent == "yearly") {
+          if (viewModel.yearSelected.value.toString() == "null") {
+            Toast.makeText(this, "Kamu belum memilih data yang ingin di Export.", Toast.LENGTH_SHORT).show()
+          } else {
+            var urlExport = ""
+            urlExport = if (intent == "daily") {
+              "https://credit-point.desa-kayu-bongkok.net/credit_point/report/${reportResult}-result?date=${binding.textDate.text}&status=export"
+            } else {
+              "https://credit-point.desa-kayu-bongkok.net/credit_point/report/${reportResult}-result?${reportResult}=${binding.textDate.text}&status=export"
+            }
+            export(urlExport)
+          }
+        }
+      }
+
     when (intent) {
       "daily" -> {
         binding.textTitleReport.text = "Laporan Harian"
+        binding.textDate.hint = "Pilih Tanggal"
+        binding.buttonPickDate.text = "Pick Date"
+        reportResult = intent
       }
       "monthly" -> {
         binding.textTitleReport.text = "Laporan Bulanan"
+        binding.textDate.hint = "Pilih Bulan"
+        binding.buttonPickDate.text = "Pick Month"
+        reportResult = intent
       }
       "yearly" -> {
         binding.textTitleReport.text = "Laporan Tahunan"
+        binding.textDate.hint = "Pilih Tahun"
+        binding.buttonPickDate.text = "Pick Year"
+        reportResult = intent
       }
     }
 
@@ -96,8 +152,6 @@ class ReportDailyActivity : AppCompatActivity() {
       .subscribe {
         when (intent) {
           "daily" -> {
-            val lokal: Locale? = Locale.UK
-
             val datePickerDialog = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
               if (monthOfYear.toString().length <= 1) {
                 viewModel.dateSelected.value = "${year}-${monthOfYear + 1}-${dayOfMonth}"
@@ -146,7 +200,20 @@ class ReportDailyActivity : AppCompatActivity() {
 
   }
 
+  private fun export(urlExport: String) {
+    if (isReportEmpty) {
+      Toast.makeText(this, "Tidak ada data yang bisa di Export.", Toast.LENGTH_SHORT).show()
+    } else {
+      val intentExport = Intent(Intent.ACTION_VIEW)
+      intentExport.data = Uri.parse(urlExport)
+      startActivity(intentExport)
+    }
+
+  }
+
   private fun setAdapter(response: ReportResponse) {
+    isReportEmpty = response.creditPoint.isNullOrEmpty()
+
     adapterReportDaily = ReportDailyAdapter(this, response)
 
     if (response.creditPoint.isNullOrEmpty()) {

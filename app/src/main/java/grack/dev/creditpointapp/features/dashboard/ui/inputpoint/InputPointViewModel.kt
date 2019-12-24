@@ -14,7 +14,7 @@ class InputPointViewModel : ViewModel() {
   var dataPelanggaran = MutableLiveData<DataPelanggaran>()
 
   fun loadPoint(): Observable<DataPelanggaran> {
-    return DataPelanggaranRepository.provideDataPelanggaramn()
+    return DataPelanggaranRepository.provideDataPelanggaran()
       .map {
         dataPelanggaran.value = it
         it

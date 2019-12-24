@@ -4,10 +4,12 @@ package grack.dev.creditpointapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import grack.dev.creditpointapp.R;
@@ -15,6 +17,9 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentKelasBinding extends ViewDataBinding {
+  @NonNull
+  public final ImageButton buttonBackInput;
+
   @NonNull
   public final AppCompatSpinner spinnerKategoriKelas;
 
@@ -33,17 +38,28 @@ public abstract class FragmentKelasBinding extends ViewDataBinding {
   @NonNull
   public final AppCompatTextView textCaptionSiswa;
 
+  @NonNull
+  public final AppCompatTextView textTitleInput;
+
+  @NonNull
+  public final ConstraintLayout toolbarInput;
+
   protected FragmentKelasBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppCompatSpinner spinnerKategoriKelas, AppCompatSpinner spinnerKelas,
-      AppCompatSpinner spinnerSiswa, AppCompatTextView textCaptionKategoriKelas,
-      AppCompatTextView textCaptionKelas, AppCompatTextView textCaptionSiswa) {
+      ImageButton buttonBackInput, AppCompatSpinner spinnerKategoriKelas,
+      AppCompatSpinner spinnerKelas, AppCompatSpinner spinnerSiswa,
+      AppCompatTextView textCaptionKategoriKelas, AppCompatTextView textCaptionKelas,
+      AppCompatTextView textCaptionSiswa, AppCompatTextView textTitleInput,
+      ConstraintLayout toolbarInput) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonBackInput = buttonBackInput;
     this.spinnerKategoriKelas = spinnerKategoriKelas;
     this.spinnerKelas = spinnerKelas;
     this.spinnerSiswa = spinnerSiswa;
     this.textCaptionKategoriKelas = textCaptionKategoriKelas;
     this.textCaptionKelas = textCaptionKelas;
     this.textCaptionSiswa = textCaptionSiswa;
+    this.textTitleInput = textTitleInput;
+    this.toolbarInput = toolbarInput;
   }
 
   @NonNull

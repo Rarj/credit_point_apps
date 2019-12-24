@@ -13,8 +13,7 @@ public class ItemReportBindingImpl extends ItemReportBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.button_attachment, 4);
+        sViewsWithIds = null;
     }
     // views
     @NonNull
@@ -25,11 +24,10 @@ public class ItemReportBindingImpl extends ItemReportBinding  {
     // Inverse Binding Event Handlers
 
     public ItemReportBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private ItemReportBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.appcompat.widget.AppCompatImageButton) bindings[4]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[1]

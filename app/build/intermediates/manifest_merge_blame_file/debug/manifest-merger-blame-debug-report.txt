@@ -13,77 +13,92 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:5:3-65
 11-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:5:20-62
-12
-13    <application
-13-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:7:3-32:17
-14        android:allowBackup="true"
-14-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:8:5-31
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/8590d24d8030c26c43694eac0eb953bf/core-1.1.0/AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:icon="@mipmap/ic_launcher"
-17-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:9:5-39
-18        android:label="@string/app_name"
-18-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:10:5-37
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:11:5-50
-20        android:supportsRtl="true"
-20-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:12:5-31
-21        android:testOnly="true"
-22        android:theme="@style/AppTheme" >
-22-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:13:5-36
-23        <activity
-23-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:14:5-22:16
-24            android:name="grack.dev.creditpointapp.features.splashscreen.SplashScreenActivity"
-24-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:15:7-65
-25            android:theme="@style/AppTheme.Splash" >
-25-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:16:7-45
-26            <intent-filter>
-26-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:17:7-21:23
-27                <action android:name="android.intent.action.MAIN" />
-27-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:18:9-61
-27-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:18:17-58
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:20:9-69
-29-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:20:19-66
-30            </intent-filter>
-31        </activity>
-32        <activity android:name="grack.dev.creditpointapp.features.login.LoginActivity" />
-32-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:5-62
-32-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:15-59
-33        <activity android:name="grack.dev.creditpointapp.features.dashboard.DashboardActivity" />
-33-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:25:5-70
-33-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:25:15-67
-34        <activity android:name="grack.dev.creditpointapp.features.bk.ui.report.ReportActivity" />
-34-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:26:5-70
-34-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:26:15-67
-35        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran.DataPelanggaranFragment" />
-35-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:5-95
-35-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:15-92
-36        <activity android:name="grack.dev.creditpointapp.features.newdashboard.MainActivity" />
-36-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:5-68
-36-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:15-65
-37        <activity android:name="grack.dev.creditpointapp.features.bk.ui.report.daily.ReportDailyActivity" />
-37-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:5-81
-37-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:15-78
-38        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.inputpoint.InputPointActivity" />
-38-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:5-85
-38-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:15-82
-39        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
-39-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:5-93
-39-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:15-90
-40
-41        <provider
-41-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
-42            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-42-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
-43            android:authorities="grack.dev.creditpointapp.lifecycle-process"
-43-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
-44            android:exported="false"
-44-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
-45            android:multiprocess="true" />
-45-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
-46    </application>
-47
-48</manifest>
+12    <uses-permission android:name="android.permission.READ_CONTACTS" />
+12-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:6:3-70
+12-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:6:20-67
+13
+14    <application
+14-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:8:3-36:17
+15        android:allowBackup="true"
+15-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:9:5-31
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/8590d24d8030c26c43694eac0eb953bf/core-1.1.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:10:5-39
+19        android:label="@string/app_name"
+19-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:11:5-37
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:12:5-50
+21        android:supportsRtl="true"
+21-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:13:5-31
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:14:5-36
+24        <activity
+24-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:15:5-23:16
+25            android:name="grack.dev.creditpointapp.features.splashscreen.SplashScreenActivity"
+25-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:16:7-65
+26            android:theme="@style/AppTheme.Splash" >
+26-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:17:7-45
+27            <intent-filter>
+27-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:18:7-22:23
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:19:9-61
+28-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:19:17-58
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:21:9-69
+30-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:21:19-66
+31            </intent-filter>
+32        </activity>
+33        <activity android:name="grack.dev.creditpointapp.features.login.LoginActivity" />
+33-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:5-62
+33-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:15-59
+34        <activity android:name="grack.dev.creditpointapp.features.dashboard.DashboardActivity" />
+34-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:25:5-70
+34-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:25:15-67
+35        <activity android:name="grack.dev.creditpointapp.features.bk.ui.report.ReportActivity" />
+35-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:26:5-70
+35-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:26:15-67
+36        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran.DataPelanggaranFragment" />
+36-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:5-95
+36-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:15-92
+37        <activity android:name="grack.dev.creditpointapp.features.newdashboard.MainActivity" />
+37-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:5-68
+37-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:15-65
+38        <activity android:name="grack.dev.creditpointapp.features.bk.ui.report.daily.ReportDailyActivity" />
+38-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:5-81
+38-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:15-78
+39        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.inputpoint.InputPointActivity" />
+39-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:5-85
+39-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:15-82
+40        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
+40-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:5-93
+40-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:15-90
+41        <activity android:name="grack.dev.creditpointapp.features.newdashboard.konsultasi.KonsultasiActivity" />
+41-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:32:5-85
+41-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:32:15-82
+42        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.kelas.KelasFragment" />
+42-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:33:5-75
+42-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:33:15-72
+43        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.rangking.RangkingSiswaFragment" />
+43-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:34:5-86
+43-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:34:15-83
+44        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformasiFragment" />
+44-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:35:5-91
+44-->/Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:35:15-88
+45
+46        <provider
+46-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+48            android:authorities="grack.dev.creditpointapp.lifecycle-process"
+48-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+49            android:exported="false"
+49-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+50            android:multiprocess="true" />
+50-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d23eec7dd8ad87832b2226ae27aef790/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+51    </application>
+52
+53</manifest>

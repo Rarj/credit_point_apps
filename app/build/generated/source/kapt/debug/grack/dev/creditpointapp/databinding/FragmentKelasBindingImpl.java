@@ -14,12 +14,15 @@ public class FragmentKelasBindingImpl extends FragmentKelasBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.text_caption_kelas, 1);
-        sViewsWithIds.put(R.id.spinner_kelas, 2);
-        sViewsWithIds.put(R.id.text_caption_kategori_kelas, 3);
-        sViewsWithIds.put(R.id.spinner_kategori_kelas, 4);
-        sViewsWithIds.put(R.id.text_caption_siswa, 5);
-        sViewsWithIds.put(R.id.spinner_siswa, 6);
+        sViewsWithIds.put(R.id.toolbar_input, 1);
+        sViewsWithIds.put(R.id.button_back_input, 2);
+        sViewsWithIds.put(R.id.text_title_input, 3);
+        sViewsWithIds.put(R.id.text_caption_kelas, 4);
+        sViewsWithIds.put(R.id.spinner_kelas, 5);
+        sViewsWithIds.put(R.id.text_caption_kategori_kelas, 6);
+        sViewsWithIds.put(R.id.spinner_kategori_kelas, 7);
+        sViewsWithIds.put(R.id.text_caption_siswa, 8);
+        sViewsWithIds.put(R.id.spinner_siswa, 9);
     }
     // views
     @NonNull
@@ -30,16 +33,19 @@ public class FragmentKelasBindingImpl extends FragmentKelasBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentKelasBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private FragmentKelasBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.appcompat.widget.AppCompatSpinner) bindings[4]
-            , (androidx.appcompat.widget.AppCompatSpinner) bindings[2]
-            , (androidx.appcompat.widget.AppCompatSpinner) bindings[6]
+            , (android.widget.ImageButton) bindings[2]
+            , (androidx.appcompat.widget.AppCompatSpinner) bindings[7]
+            , (androidx.appcompat.widget.AppCompatSpinner) bindings[5]
+            , (androidx.appcompat.widget.AppCompatSpinner) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

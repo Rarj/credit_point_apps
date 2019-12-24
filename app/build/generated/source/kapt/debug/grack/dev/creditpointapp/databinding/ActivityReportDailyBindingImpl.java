@@ -17,10 +17,11 @@ public class ActivityReportDailyBindingImpl extends ActivityReportDailyBinding  
         sViewsWithIds.put(R.id.toolbar_report, 2);
         sViewsWithIds.put(R.id.button_back_report, 3);
         sViewsWithIds.put(R.id.text_title_report, 4);
-        sViewsWithIds.put(R.id.button_pick_date, 5);
-        sViewsWithIds.put(R.id.recycler_report_daily, 6);
-        sViewsWithIds.put(R.id.image_empty, 7);
-        sViewsWithIds.put(R.id.text_empty_caption, 8);
+        sViewsWithIds.put(R.id.button_export, 5);
+        sViewsWithIds.put(R.id.button_pick_date, 6);
+        sViewsWithIds.put(R.id.recycler_report_daily, 7);
+        sViewsWithIds.put(R.id.image_empty, 8);
+        sViewsWithIds.put(R.id.text_empty_caption, 9);
     }
     // views
     @NonNull
@@ -31,16 +32,17 @@ public class ActivityReportDailyBindingImpl extends ActivityReportDailyBinding  
     // Inverse Binding Event Handlers
 
     public ActivityReportDailyBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private ActivityReportDailyBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 1
             , (android.widget.ImageButton) bindings[3]
-            , (com.google.android.material.button.MaterialButton) bindings[5]
-            , (androidx.appcompat.widget.AppCompatImageView) bindings[7]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[6]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[5]
+            , (com.google.android.material.button.MaterialButton) bindings[6]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[8]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[7]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[2]
             );

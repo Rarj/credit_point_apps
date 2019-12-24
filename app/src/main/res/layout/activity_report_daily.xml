@@ -44,10 +44,20 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_export"
         app:layout_constraintStart_toEndOf="@id/button_back_report"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Laporan Tahunan" />
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_export"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_export"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -58,7 +68,6 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
       android:background="#E4E4E4"
-      android:hint="Pilih tanggal"
       android:padding="10dp"
       android:text="@{viewModel.dateSelected}"
       android:textSize="20sp"

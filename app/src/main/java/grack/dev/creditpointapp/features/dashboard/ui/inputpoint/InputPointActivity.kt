@@ -4,9 +4,11 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
@@ -63,7 +65,7 @@ class InputPointActivity : AppCompatActivity() {
           override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
             idPoint = arrayAdapter.getItem(position)?.idPoint ?: ""
 
-            binding.buttonSave.isEnabled = binding.spinnerInput.selectedItem != ""
+            binding.buttonSave.isEnabled = idPoint != ""
           }
         }
       }
@@ -74,14 +76,18 @@ class InputPointActivity : AppCompatActivity() {
       .subscribe {
         val request = InputPointRequest(intentIdSiswa.toString(), idPoint, SharedPref.getUser(this).namaAdmin.toString())
         viewModel.inputPoint(request)
-          .subscribe {
+          .subscribe({
             if (it.status == "Data Berhasil Masuk") {
+              Toast.makeText(this, "Input Point Berhasil Masuk", Toast.LENGTH_SHORT).show()
               val intent = Intent()
               intent.putExtra("listenerCode", "listenerCode")
               setResult(Activity.RESULT_OK, intent)
               finish()
             }
-          }
+          }, {
+            Log.e("AKSDHAJKSHAS", it.toString())
+            Toast.makeText(this, "Terjadi kesalahan. Silahkan coba lagi, yaa.", Toast.LENGTH_SHORT).show()
+          })
       }
 
   }

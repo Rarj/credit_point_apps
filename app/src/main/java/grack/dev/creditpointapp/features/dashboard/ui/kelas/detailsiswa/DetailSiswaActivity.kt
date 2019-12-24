@@ -4,6 +4,9 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -64,7 +67,11 @@ class DetailSiswaActivity : AppCompatActivity() {
   @SuppressLint("CheckResult")
   private fun setDetailSiswa(idSiswa: String?) {
     viewModel.loadDetailSiswa(idSiswa)
-      .subscribe {
+      .doFinally {
+        binding.progressHorizontal.visibility = GONE
+        binding.containerScroll.visibility = VISIBLE
+      }
+      .subscribe({
         it.siswa?.forEach { siswa ->
           viewModel.detailSiswa.value = DetailSiswaModel(
             siswa?.alamat,
@@ -101,7 +108,10 @@ class DetailSiswaActivity : AppCompatActivity() {
             siswa?.updatedDate
           )
         }
-      }
+      }, {
+        Log.e("AKSDHAJKSHAS", it.toString())
+        Toast.makeText(this, "Terjadi kesalahan. Silahkan coba lagi, yaa.", Toast.LENGTH_SHORT).show()
+      })
   }
 
 }

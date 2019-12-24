@@ -21,7 +21,6 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-
     <activity android:name=".features.login.LoginActivity" />
     <activity android:name=".features.dashboard.DashboardActivity" />
     <activity android:name=".features.bk.ui.report.ReportActivity" />
@@ -30,6 +29,10 @@
     <activity android:name=".features.bk.ui.report.daily.ReportDailyActivity" />
     <activity android:name=".features.dashboard.ui.inputpoint.InputPointActivity" />
     <activity android:name=".features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity" />
+    <activity android:name=".features.newdashboard.konsultasi.KonsultasiActivity" />
+    <activity android:name=".features.dashboard.ui.kelas.KelasFragment" />
+    <activity android:name=".features.dashboard.ui.rangking.RangkingSiswaFragment" />
+    <activity android:name=".features.dashboard.ui.datainformasi.DataInformasiFragment" />
   </application>
 
 </manifest>

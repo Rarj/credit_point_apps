@@ -5,23 +5,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
     tools:context=".features.dashboard.ui.kelas.KelasFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/toolbar_input"
+      android:layout_width="0dp"
+      android:layout_height="72dp"
+      android:background="@color/colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <ImageButton
+        android:id="@+id/button_back_input"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_title_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Input Point"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_back_input"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.AppCompatTextView
       android:id="@+id/text_caption_kelas"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="8dp"
       android:text="Pilih Kelas : "
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toBottomOf="@id/toolbar_input" />
 
     <androidx.appcompat.widget.AppCompatSpinner
       android:id="@+id/spinner_kelas"
       android:layout_width="0dp"
       android:layout_height="56dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/text_caption_kelas" />
@@ -30,6 +72,7 @@
       android:id="@+id/text_caption_kategori_kelas"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_margin="8dp"
       android:text="Pilih Kategori Kelas : "
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
       app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +83,8 @@
       android:id="@+id/spinner_kategori_kelas"
       android:layout_width="0dp"
       android:layout_height="56dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/text_caption_kategori_kelas" />
@@ -48,6 +93,7 @@
       android:id="@+id/text_caption_siswa"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_margin="8dp"
       android:text="Pilih Siswa"
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
       app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +102,11 @@
 
     <androidx.appcompat.widget.AppCompatSpinner
       android:id="@+id/spinner_siswa"
+
       android:layout_width="0dp"
       android:layout_height="56dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/text_caption_siswa" />

@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -33,7 +35,13 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
   public final MaterialCardView containerDataIbu;
 
   @NonNull
+  public final ScrollView containerScroll;
+
+  @NonNull
   public final MaterialCardView containerSiswa;
+
+  @NonNull
+  public final ProgressBar progressHorizontal;
 
   @NonNull
   public final AppCompatTextView textAddressSiswa;
@@ -93,9 +101,6 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
   public final AppCompatTextView textPenghasilanIbuSiswa;
 
   @NonNull
-  public final AppCompatTextView textPlaceBirthSiswa;
-
-  @NonNull
   public final AppCompatTextView textTitle;
 
   @NonNull
@@ -106,7 +111,8 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
 
   protected ActivityDetailSiswaBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageButton buttonBack, MaterialButton buttonInput, MaterialCardView containerDataAyah,
-      MaterialCardView containerDataIbu, MaterialCardView containerSiswa,
+      MaterialCardView containerDataIbu, ScrollView containerScroll,
+      MaterialCardView containerSiswa, ProgressBar progressHorizontal,
       AppCompatTextView textAddressSiswa, AppCompatTextView textAlamatAyahSiswa,
       AppCompatTextView textAlamatIbuSiswa, AppCompatTextView textAnakKeSiswa,
       AppCompatTextView textCaptionParent1, AppCompatTextView textCaptionParent2,
@@ -116,14 +122,16 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
       AppCompatTextView textNohpAyahSiswa, AppCompatTextView textNohpIbuSiswa,
       AppCompatTextView textNohpSiswa, AppCompatTextView textPekerjaanAyahSiswa,
       AppCompatTextView textPekerjaanIbuSiswa, AppCompatTextView textPenghasilanAyahSiswa,
-      AppCompatTextView textPenghasilanIbuSiswa, AppCompatTextView textPlaceBirthSiswa,
-      AppCompatTextView textTitle, ConstraintLayout toolbar) {
+      AppCompatTextView textPenghasilanIbuSiswa, AppCompatTextView textTitle,
+      ConstraintLayout toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonBack = buttonBack;
     this.buttonInput = buttonInput;
     this.containerDataAyah = containerDataAyah;
     this.containerDataIbu = containerDataIbu;
+    this.containerScroll = containerScroll;
     this.containerSiswa = containerSiswa;
+    this.progressHorizontal = progressHorizontal;
     this.textAddressSiswa = textAddressSiswa;
     this.textAlamatAyahSiswa = textAlamatAyahSiswa;
     this.textAlamatIbuSiswa = textAlamatIbuSiswa;
@@ -143,7 +151,6 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
     this.textPekerjaanIbuSiswa = textPekerjaanIbuSiswa;
     this.textPenghasilanAyahSiswa = textPenghasilanAyahSiswa;
     this.textPenghasilanIbuSiswa = textPenghasilanIbuSiswa;
-    this.textPlaceBirthSiswa = textPlaceBirthSiswa;
     this.textTitle = textTitle;
     this.toolbar = toolbar;
   }
