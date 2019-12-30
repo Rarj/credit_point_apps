@@ -14,7 +14,11 @@ public class ActivityKonsultasiBindingImpl extends ActivityKonsultasiBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.recycler_data_konsultasi_siswa, 1);
+        sViewsWithIds.put(R.id.toolbar, 1);
+        sViewsWithIds.put(R.id.button_back, 2);
+        sViewsWithIds.put(R.id.text_title, 3);
+        sViewsWithIds.put(R.id.progress_horizontal, 4);
+        sViewsWithIds.put(R.id.recycler_data_konsultasi_siswa, 5);
     }
     // views
     @NonNull
@@ -25,11 +29,15 @@ public class ActivityKonsultasiBindingImpl extends ActivityKonsultasiBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityKonsultasiBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private ActivityKonsultasiBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.recyclerview.widget.RecyclerView) bindings[1]
+            , (android.widget.ImageButton) bindings[2]
+            , (android.widget.ProgressBar) bindings[4]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

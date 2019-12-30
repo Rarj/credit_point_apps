@@ -1,21 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
 MERGED from [androidx.databinding:databinding-adapters:4.0.0-alpha02] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/463b8fefbdceeffb86012f6965289c41/databinding-adapters-4.0.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.0.0-alpha02] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/010d1a3541d962d08ed3e2d93102f3ec/databinding-runtime-4.0.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/e072334b4f621f068cd110413d26e95b/navigation-ui-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/aac3b41c9563a9d1ae8bc8ac5a9cfd02/navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/24631badc29938e4f3a1b6a6270728ac/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/4d6bcf697d8f4a450b120468365e9400/material-1.2.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/c49d0f5850c2ff2b19bc9ac6b35252be/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/da23875082993f5315e7d2ff254cd6f2/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/f864dc0fec8a864a71e253e0b1b225d1/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/82d0e6701a481a0813882edb2cdc0827/navigation-fragment-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d7542583f3d2069977c075fdea7251e6/navigation-fragment-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/91a54d6ed6c0701061db84bd3ffd3b53/lifecycle-extensions-2.1.0/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/b6d3bfc313a484d6b3b7090d7c248422/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/48db66478a8f57eedce3c92cacfaf8c4/jetified-viewpager2-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/485b87303a2a26a2772eb059a2e2433f/recyclerview-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/175c5b38e5ea3ca1994033b86b589555/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/32dd18bc20374347370f64bda9c4c4df/jetified-core-ktx-1.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.jakewharton.rxbinding3:rxbinding:3.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/10626612edd71a70eb575fb643492e9b/jetified-rxbinding-3.0.0/AndroidManifest.xml:2:1-7:12
@@ -32,15 +33,15 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/rioarjuna/.gra
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/c2e073b85fc85e013cfcf325c27c3f1c/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/69f1e3f7b48bf032a7bc124199d41457/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/6eec2a88292885d6611e4475b31a9268/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.1] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1cc49b83b926edddd8136f08fdbd94f9/transition-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/2cfcd4593ab6acaf51d167c56f83f15b/coordinatorlayout-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/729ec63cb175d3e72ad2b69967c4da59/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1b5254c3c77311b43f317118dc9d7c9e/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a2d50235b5fa905594b3391e09f1398f/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/f9457f1e0d3a96799a1536f2d950b3cf/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/bdaeb8fcd0fe0c4d8096bb8b497ea7b7/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/622e711b8cb84c1add01e692ccb94789/navigation-runtime-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/bba06256fab6f7192b3e261f2563a24e/navigation-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/b18a776e14aa077e2f6d330e6255566f/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1b5254c3c77311b43f317118dc9d7c9e/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a2d50235b5fa905594b3391e09f1398f/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d6d24dc8947b8a49b772d74f7dfc4062/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/491e0164ba2e51b31fc769c2a4b7e9e2/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/9969bcadffd45b288654f70092f39095/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/b87bf8c3c56d559be4f764c6942ced45/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -63,20 +64,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/rioarjuna/.gradle/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/5bc156cd405cb747a14cabf33fc2f615/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/ea8b8f7e57dd90182b7267fbe0f82632/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a21d21c90477794133452d867b7091d6/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:3:3-37
 		INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml
 		INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
 		INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-38:12
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:1-41:12
 		INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:2:11-69
@@ -89,9 +90,9 @@ ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.x
 	android:name
 		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:6:20-67
 application
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:8:3-36:17
-MERGED from [com.google.android.material:material:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/24631badc29938e4f3a1b6a6270728ac/material-1.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/24631badc29938e4f3a1b6a6270728ac/material-1.0.0/AndroidManifest.xml:22:5-20
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:8:3-39:17
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/4d6bcf697d8f4a450b120468365e9400/material-1.2.0-alpha02/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/4d6bcf697d8f4a450b120468365e9400/material-1.2.0-alpha02/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/da23875082993f5315e7d2ff254cd6f2/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/da23875082993f5315e7d2ff254cd6f2/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/91a54d6ed6c0701061db84bd3ffd3b53/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
@@ -122,70 +123,82 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/rioarjuna/.grad
 		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:9:5-31
 	android:theme
 		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:14:5-36
+activity#grack.dev.creditpointapp.features.loginwalimurid.history.HistoryActivity
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:15:5-90
+	android:name
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:15:15-78
+activity#grack.dev.creditpointapp.features.loginwalimurid.WaliMuridActivity
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:16:15-72
+activity#grack.dev.creditpointapp.features.newdashboard.ProfileActivity
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:17:5-71
+	android:name
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:17:15-68
 activity#grack.dev.creditpointapp.features.splashscreen.SplashScreenActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:15:5-23:16
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:18:5-26:16
 	android:theme
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:17:7-45
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:20:7-45
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:16:7-65
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:19:7-65
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:18:7-22:23
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:21:7-25:23
 action#android.intent.action.MAIN
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:19:9-61
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:22:9-61
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:19:17-58
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:22:17-58
 category#android.intent.category.LAUNCHER
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:21:9-69
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:9-69
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:21:19-66
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:19-66
 activity#grack.dev.creditpointapp.features.login.LoginActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:5-62
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:5-62
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:24:15-59
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:15-59
 activity#grack.dev.creditpointapp.features.dashboard.DashboardActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:25:5-70
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:5-70
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:25:15-67
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:15-67
 activity#grack.dev.creditpointapp.features.bk.ui.report.ReportActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:26:5-70
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:5-70
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:26:15-67
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:15-67
 activity#grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran.DataPelanggaranFragment
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:5-95
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:5-95
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:27:15-92
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:15-92
 activity#grack.dev.creditpointapp.features.newdashboard.MainActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:5-68
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:5-68
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:28:15-65
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:15-65
 activity#grack.dev.creditpointapp.features.bk.ui.report.daily.ReportDailyActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:5-81
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:32:5-81
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:29:15-78
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:32:15-78
 activity#grack.dev.creditpointapp.features.dashboard.ui.inputpoint.InputPointActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:5-85
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:33:5-85
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:30:15-82
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:33:15-82
 activity#grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:5-93
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:34:5-93
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:31:15-90
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:34:15-90
 activity#grack.dev.creditpointapp.features.newdashboard.konsultasi.KonsultasiActivity
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:32:5-85
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:35:5-85
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:32:15-82
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:35:15-82
 activity#grack.dev.creditpointapp.features.dashboard.ui.kelas.KelasFragment
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:33:5-75
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:36:5-75
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:33:15-72
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:36:15-72
 activity#grack.dev.creditpointapp.features.dashboard.ui.rangking.RangkingSiswaFragment
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:34:5-86
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:37:5-86
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:34:15-83
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:37:15-83
 activity#grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformasiFragment
-ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:35:5-91
+ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:38:5-91
 	android:name
-		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:35:15-88
+		ADDED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml:38:15-88
 uses-sdk
 INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Volumes/Data/Remote/credit_point_apps/app/src/main/AndroidManifest.xml
@@ -198,8 +211,8 @@ MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /Users/rioarjuna/.grad
 MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/e072334b4f621f068cd110413d26e95b/navigation-ui-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/aac3b41c9563a9d1ae8bc8ac5a9cfd02/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/aac3b41c9563a9d1ae8bc8ac5a9cfd02/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/24631badc29938e4f3a1b6a6270728ac/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/24631badc29938e4f3a1b6a6270728ac/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/4d6bcf697d8f4a450b120468365e9400/material-1.2.0-alpha02/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/4d6bcf697d8f4a450b120468365e9400/material-1.2.0-alpha02/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/c49d0f5850c2ff2b19bc9ac6b35252be/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/c49d0f5850c2ff2b19bc9ac6b35252be/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/da23875082993f5315e7d2ff254cd6f2/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
@@ -212,8 +225,10 @@ MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/rioarjuna/.gr
 MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d7542583f3d2069977c075fdea7251e6/navigation-fragment-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/91a54d6ed6c0701061db84bd3ffd3b53/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/91a54d6ed6c0701061db84bd3ffd3b53/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/b6d3bfc313a484d6b3b7090d7c248422/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/b6d3bfc313a484d6b3b7090d7c248422/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/48db66478a8f57eedce3c92cacfaf8c4/jetified-viewpager2-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/48db66478a8f57eedce3c92cacfaf8c4/jetified-viewpager2-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/485b87303a2a26a2772eb059a2e2433f/recyclerview-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/485b87303a2a26a2772eb059a2e2433f/recyclerview-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/175c5b38e5ea3ca1994033b86b589555/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/175c5b38e5ea3ca1994033b86b589555/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/32dd18bc20374347370f64bda9c4c4df/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
@@ -246,8 +261,14 @@ MERGED from [androidx.media:media:1.0.0] /Users/rioarjuna/.gradle/caches/transfo
 MERGED from [androidx.media:media:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/69f1e3f7b48bf032a7bc124199d41457/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/6eec2a88292885d6611e4475b31a9268/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/6eec2a88292885d6611e4475b31a9268/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.1] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1cc49b83b926edddd8136f08fdbd94f9/transition-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.1] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1cc49b83b926edddd8136f08fdbd94f9/transition-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/2cfcd4593ab6acaf51d167c56f83f15b/coordinatorlayout-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-rc01] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/2cfcd4593ab6acaf51d167c56f83f15b/coordinatorlayout-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/729ec63cb175d3e72ad2b69967c4da59/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/729ec63cb175d3e72ad2b69967c4da59/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1b5254c3c77311b43f317118dc9d7c9e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1b5254c3c77311b43f317118dc9d7c9e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a2d50235b5fa905594b3391e09f1398f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a2d50235b5fa905594b3391e09f1398f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/f9457f1e0d3a96799a1536f2d950b3cf/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/f9457f1e0d3a96799a1536f2d950b3cf/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/bdaeb8fcd0fe0c4d8096bb8b497ea7b7/loader-1.0.0/AndroidManifest.xml:20:5-44
@@ -258,12 +279,6 @@ MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/rioarjuna/.gra
 MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/bba06256fab6f7192b3e261f2563a24e/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/b18a776e14aa077e2f6d330e6255566f/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/b18a776e14aa077e2f6d330e6255566f/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1b5254c3c77311b43f317118dc9d7c9e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1b5254c3c77311b43f317118dc9d7c9e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a2d50235b5fa905594b3391e09f1398f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/a2d50235b5fa905594b3391e09f1398f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d6d24dc8947b8a49b772d74f7dfc4062/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/d6d24dc8947b8a49b772d74f7dfc4062/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/491e0164ba2e51b31fc769c2a4b7e9e2/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/491e0164ba2e51b31fc769c2a4b7e9e2/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/9969bcadffd45b288654f70092f39095/customview-1.0.0/AndroidManifest.xml:20:5-44

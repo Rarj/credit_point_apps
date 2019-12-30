@@ -4,8 +4,12 @@ package grack.dev.creditpointapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -17,15 +21,33 @@ import java.lang.Object;
 
 public abstract class ActivityKonsultasiBinding extends ViewDataBinding {
   @NonNull
+  public final ImageButton buttonBack;
+
+  @NonNull
+  public final ProgressBar progressHorizontal;
+
+  @NonNull
   public final RecyclerView recyclerDataKonsultasiSiswa;
+
+  @NonNull
+  public final AppCompatTextView textTitle;
+
+  @NonNull
+  public final ConstraintLayout toolbar;
 
   @Bindable
   protected KonsultasiViewModel mViewModelKonsultasi;
 
   protected ActivityKonsultasiBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView recyclerDataKonsultasiSiswa) {
+      ImageButton buttonBack, ProgressBar progressHorizontal,
+      RecyclerView recyclerDataKonsultasiSiswa, AppCompatTextView textTitle,
+      ConstraintLayout toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonBack = buttonBack;
+    this.progressHorizontal = progressHorizontal;
     this.recyclerDataKonsultasiSiswa = recyclerDataKonsultasiSiswa;
+    this.textTitle = textTitle;
+    this.toolbar = toolbar;
   }
 
   public abstract void setViewModelKonsultasi(@Nullable KonsultasiViewModel viewModelKonsultasi);

@@ -11,6 +11,8 @@ import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResp
 import grack.dev.creditpointapp.repository.konsultasi.model.KonsultasiResponse
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
+import grack.dev.creditpointapp.repository.loginwalimurid.history.model.HistoryResponse
+import grack.dev.creditpointapp.repository.loginwalimurid.model.LoginWaliMuridResponse
 import grack.dev.creditpointapp.repository.rangking.model.RangkingResponse
 import grack.dev.creditpointapp.repository.report.model.ReportResponse
 import io.reactivex.Observable
@@ -23,6 +25,9 @@ interface ApiConfig {
 
   @POST("login")
   fun requestLogin(@Body loginRequest: LoginRequest): Observable<LoginResponse>
+
+  @POST("login")
+  fun requestLoginWaliMurid(@Body loginRequest: LoginRequest): Observable<LoginWaliMuridResponse>
 
   @GET("kelas")
   fun requestListKelas(): Observable<KelasResponse>
@@ -57,6 +62,9 @@ interface ApiConfig {
   @GET("credit-point/report/yearly")
   fun reportYearly(@Query("year") year: String): Observable<ReportResponse>
 
-  @GET("api/seluruhsiswa/nihyaaaa")
+  @GET("siswa/pelanggaran")
   fun konsultasiSiswa(): Observable<KonsultasiResponse>
+
+  @GET("siswa/detail-pelanggaran")
+  fun historyPelanggaran(@Query("id_siswa") id_siswa: String): Observable<HistoryResponse>
 }

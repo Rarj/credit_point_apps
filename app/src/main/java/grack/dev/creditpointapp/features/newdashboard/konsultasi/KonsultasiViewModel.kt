@@ -1,6 +1,7 @@
 package grack.dev.creditpointapp.features.newdashboard.konsultasi
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import grack.dev.creditpointapp.repository.konsultasi.KonsultasiRepository
@@ -13,9 +14,11 @@ class KonsultasiViewModel : ViewModel() {
   @SuppressLint("CheckResult")
   fun loadAllSiswa() {
     KonsultasiRepository.provideKonsultasiSemuaSiswa()
-      .subscribe { konsultasiResponse ->
+      .subscribe({ konsultasiResponse ->
         listSemuaSiswa.value = konsultasiResponse
-      }
+      }, {
+        Log.e("AKSDHAJKSHAS", it.toString())
+      })
   }
 
 }

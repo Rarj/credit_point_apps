@@ -71,11 +71,21 @@
         android:text="@={viewModel.password}" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <androidx.appcompat.widget.AppCompatCheckBox
+      android:id="@+id/checkbox_wali_murid"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Centang jika masuk sebagai Wali Murid"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/input_layout_password" />
+
     <com.google.android.material.button.MaterialButton
       android:id="@+id/button_login"
       android:layout_width="0dp"
       android:layout_height="60dp"
-      android:layout_marginTop="8dp"
+      android:layout_marginTop="16dp"
       android:text="Login"
       android:textColor="@android:color/white"
       android:textSize="20sp"
@@ -83,7 +93,8 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/input_layout_password" />
+      app:layout_constraintTop_toBottomOf="@id/checkbox_wali_murid"
+      app:layout_constraintVertical_bias="0" />
   </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

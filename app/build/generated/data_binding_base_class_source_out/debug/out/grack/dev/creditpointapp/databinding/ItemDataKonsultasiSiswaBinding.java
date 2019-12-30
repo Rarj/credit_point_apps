@@ -13,6 +13,8 @@ import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import grack.dev.creditpointapp.R;
+import grack.dev.creditpointapp.repository.konsultasi.model.Pelanggaran;
+import grack.dev.creditpointapp.repository.konsultasi.model.WaliMurid;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -24,34 +26,49 @@ public abstract class ItemDataKonsultasiSiswaBinding extends ViewDataBinding {
   public final ConstraintLayout containerKonsultasiSiswa;
 
   @NonNull
-  public final AppCompatTextView textDateCreated;
+  public final AppCompatTextView textEmailWaliMurid;
 
   @NonNull
-  public final AppCompatTextView textKategori;
+  public final AppCompatTextView textNamaWaliMurid;
 
   @NonNull
   public final AppCompatTextView textName;
 
+  @NonNull
+  public final AppCompatTextView textNohpWaliMurid;
+
   @Bindable
-  protected String mModel;
+  protected Pelanggaran mModelSiswa;
+
+  @Bindable
+  protected WaliMurid mModelWaliMurid;
 
   protected ItemDataKonsultasiSiswaBinding(Object _bindingComponent, View _root,
       int _localFieldCount, AppCompatImageButton buttonWhatsapp,
-      ConstraintLayout containerKonsultasiSiswa, AppCompatTextView textDateCreated,
-      AppCompatTextView textKategori, AppCompatTextView textName) {
+      ConstraintLayout containerKonsultasiSiswa, AppCompatTextView textEmailWaliMurid,
+      AppCompatTextView textNamaWaliMurid, AppCompatTextView textName,
+      AppCompatTextView textNohpWaliMurid) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonWhatsapp = buttonWhatsapp;
     this.containerKonsultasiSiswa = containerKonsultasiSiswa;
-    this.textDateCreated = textDateCreated;
-    this.textKategori = textKategori;
+    this.textEmailWaliMurid = textEmailWaliMurid;
+    this.textNamaWaliMurid = textNamaWaliMurid;
     this.textName = textName;
+    this.textNohpWaliMurid = textNohpWaliMurid;
   }
 
-  public abstract void setModel(@Nullable String model);
+  public abstract void setModelSiswa(@Nullable Pelanggaran modelSiswa);
 
   @Nullable
-  public String getModel() {
-    return mModel;
+  public Pelanggaran getModelSiswa() {
+    return mModelSiswa;
+  }
+
+  public abstract void setModelWaliMurid(@Nullable WaliMurid modelWaliMurid);
+
+  @Nullable
+  public WaliMurid getModelWaliMurid() {
+    return mModelWaliMurid;
   }
 
   @NonNull

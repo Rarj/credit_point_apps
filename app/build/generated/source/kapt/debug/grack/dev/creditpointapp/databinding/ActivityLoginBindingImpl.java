@@ -17,7 +17,8 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
         sViewsWithIds.put(R.id.image_login, 3);
         sViewsWithIds.put(R.id.input_layout_email, 4);
         sViewsWithIds.put(R.id.input_layout_password, 5);
-        sViewsWithIds.put(R.id.button_login, 6);
+        sViewsWithIds.put(R.id.checkbox_wali_murid, 6);
+        sViewsWithIds.put(R.id.button_login, 7);
     }
     // views
     // variables
@@ -100,11 +101,12 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     };
 
     public ActivityLoginBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
     }
     private ActivityLoginBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 2
-            , (com.google.android.material.button.MaterialButton) bindings[6]
+            , (com.google.android.material.button.MaterialButton) bindings[7]
+            , (androidx.appcompat.widget.AppCompatCheckBox) bindings[6]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[3]
             , (com.google.android.material.textfield.TextInputEditText) bindings[1]

@@ -3,4 +3,6 @@
   <color name="colorPrimary">#00BEEE</color>
   <color name="colorPrimaryDark">#009EB3</color>
   <color name="colorAccent">#DA03C1</color>
+
+  <color name="graColor">#BEBEBE</color>
 </resources>

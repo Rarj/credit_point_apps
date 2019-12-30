@@ -20,6 +20,7 @@ import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.preferences.SharedPref
 import kotlinx.android.synthetic.main.app_bar_dashboard.*
 
+@Deprecated("Ini udah di ganti ke MainActivity.kt")
 class DashboardActivity : AppCompatActivity() {
 
   private lateinit var appBarConfiguration: AppBarConfiguration

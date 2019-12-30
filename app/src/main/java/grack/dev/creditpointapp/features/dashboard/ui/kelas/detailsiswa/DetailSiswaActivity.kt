@@ -31,8 +31,16 @@ class DetailSiswaActivity : AppCompatActivity() {
     binding.viewModel = viewModel
     binding.lifecycleOwner = this
 
-    val intent = intent.getStringExtra("key_id_siswa")
-    setDetailSiswa(intent)
+    val intentKeyId = intent.getStringExtra("key_id_siswa")
+    val intentFlag = intent.getStringExtra("wali_murid")
+
+    if (intentFlag == "wali_murid") {
+      binding.buttonInput.visibility = GONE
+    } else {
+      binding.buttonInput.visibility = VISIBLE
+    }
+
+    setDetailSiswa(intentKeyId)
 
     binding.buttonBack.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
       .subscribe {
@@ -41,7 +49,7 @@ class DetailSiswaActivity : AppCompatActivity() {
 
     binding.buttonInput.setOnClickListener {
       val intents = Intent(this, InputPointActivity::class.java)
-      intents.putExtra("idSiswa", intent)
+      intents.putExtra("idSiswa", intentKeyId)
       intents.putExtra("namaSiswa", viewModel.detailSiswa.value?.nama)
       startActivityForResult(intents, 200)
     }

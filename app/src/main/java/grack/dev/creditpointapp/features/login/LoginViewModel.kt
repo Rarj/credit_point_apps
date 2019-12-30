@@ -3,9 +3,12 @@ package grack.dev.creditpointapp.features.login
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import grack.dev.creditpointapp.preferences.UserPreferences
+import grack.dev.creditpointapp.preferences.WaliMuridPreferences
 import grack.dev.creditpointapp.repository.login.LoginRepository
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
+import grack.dev.creditpointapp.repository.loginwalimurid.LoginWaliMuridRepository
+import grack.dev.creditpointapp.repository.loginwalimurid.model.LoginWaliMuridResponse
 import io.reactivex.Observable
 
 class LoginViewModel : ViewModel() {
@@ -14,6 +17,7 @@ class LoginViewModel : ViewModel() {
   val password = MutableLiveData<String>()
   val loginResponse = MutableLiveData<LoginResponse>()
   val userPreferences = MutableLiveData<UserPreferences>()
+  val waliMuridPreferences = MutableLiveData<WaliMuridPreferences>()
 
   fun login(): Observable<LoginResponse> {
     val loginRequest = LoginRequest(email.value.toString(), password.value.toString())
@@ -29,6 +33,23 @@ class LoginViewModel : ViewModel() {
         )
 
         loginResponse.value = it
+        it
+      }
+  }
+
+  fun loginWaliMurid(): Observable<LoginWaliMuridResponse> {
+    val loginRequest = LoginRequest(email.value.toString(), password.value.toString())
+    return LoginWaliMuridRepository.provideLoginWaliMurid(loginRequest)
+      .map {
+        waliMuridPreferences.value = WaliMuridPreferences(
+          it.waliMurid[0].idSiswa,
+          it.user?.alamatAdmin,
+          it.user?.emailAdmin,
+          it.user?.idAdmin,
+          it.user?.namaAdmin,
+          it.user?.statusAdmin
+        )
+
         it
       }
   }

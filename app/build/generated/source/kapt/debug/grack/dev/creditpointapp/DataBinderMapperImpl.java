@@ -7,6 +7,7 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import grack.dev.creditpointapp.databinding.ActivityDetailSiswaBindingImpl;
+import grack.dev.creditpointapp.databinding.ActivityHistoryBindingImpl;
 import grack.dev.creditpointapp.databinding.ActivityInputPointBindingImpl;
 import grack.dev.creditpointapp.databinding.ActivityKonsultasiBindingImpl;
 import grack.dev.creditpointapp.databinding.ActivityLoginBindingImpl;
@@ -18,6 +19,8 @@ import grack.dev.creditpointapp.databinding.FragmentRangkingSiswaBindingImpl;
 import grack.dev.creditpointapp.databinding.ItemDataInformasiBindingImpl;
 import grack.dev.creditpointapp.databinding.ItemDataKonsultasiSiswaBindingImpl;
 import grack.dev.creditpointapp.databinding.ItemDataPelanggaranBindingImpl;
+import grack.dev.creditpointapp.databinding.ItemHistoryPelanggaranSiswaBindingImpl;
+import grack.dev.creditpointapp.databinding.ItemHistoryPrestasiSiswaBindingImpl;
 import grack.dev.creditpointapp.databinding.ItemRangkingSiswaBindingImpl;
 import grack.dev.creditpointapp.databinding.ItemReportBindingImpl;
 import java.lang.IllegalArgumentException;
@@ -33,36 +36,43 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYDETAILSISWA = 1;
 
-  private static final int LAYOUT_ACTIVITYINPUTPOINT = 2;
+  private static final int LAYOUT_ACTIVITYHISTORY = 2;
 
-  private static final int LAYOUT_ACTIVITYKONSULTASI = 3;
+  private static final int LAYOUT_ACTIVITYINPUTPOINT = 3;
 
-  private static final int LAYOUT_ACTIVITYLOGIN = 4;
+  private static final int LAYOUT_ACTIVITYKONSULTASI = 4;
 
-  private static final int LAYOUT_ACTIVITYREPORTDAILY = 5;
+  private static final int LAYOUT_ACTIVITYLOGIN = 5;
 
-  private static final int LAYOUT_FRAGMENTDATAINFORMASI = 6;
+  private static final int LAYOUT_ACTIVITYREPORTDAILY = 6;
 
-  private static final int LAYOUT_FRAGMENTDATAPELANGGARAN = 7;
+  private static final int LAYOUT_FRAGMENTDATAINFORMASI = 7;
 
-  private static final int LAYOUT_FRAGMENTKELAS = 8;
+  private static final int LAYOUT_FRAGMENTDATAPELANGGARAN = 8;
 
-  private static final int LAYOUT_FRAGMENTRANGKINGSISWA = 9;
+  private static final int LAYOUT_FRAGMENTKELAS = 9;
 
-  private static final int LAYOUT_ITEMDATAINFORMASI = 10;
+  private static final int LAYOUT_FRAGMENTRANGKINGSISWA = 10;
 
-  private static final int LAYOUT_ITEMDATAKONSULTASISISWA = 11;
+  private static final int LAYOUT_ITEMDATAINFORMASI = 11;
 
-  private static final int LAYOUT_ITEMDATAPELANGGARAN = 12;
+  private static final int LAYOUT_ITEMDATAKONSULTASISISWA = 12;
 
-  private static final int LAYOUT_ITEMRANGKINGSISWA = 13;
+  private static final int LAYOUT_ITEMDATAPELANGGARAN = 13;
 
-  private static final int LAYOUT_ITEMREPORT = 14;
+  private static final int LAYOUT_ITEMHISTORYPELANGGARANSISWA = 14;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(14);
+  private static final int LAYOUT_ITEMHISTORYPRESTASISISWA = 15;
+
+  private static final int LAYOUT_ITEMRANGKINGSISWA = 16;
+
+  private static final int LAYOUT_ITEMREPORT = 17;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(17);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.activity_detail_siswa, LAYOUT_ACTIVITYDETAILSISWA);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.activity_history, LAYOUT_ACTIVITYHISTORY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.activity_input_point, LAYOUT_ACTIVITYINPUTPOINT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.activity_konsultasi, LAYOUT_ACTIVITYKONSULTASI);
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
@@ -74,6 +84,8 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_data_informasi, LAYOUT_ITEMDATAINFORMASI);
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_data_konsultasi_siswa, LAYOUT_ITEMDATAKONSULTASISISWA);
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_data_pelanggaran, LAYOUT_ITEMDATAPELANGGARAN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_history_pelanggaran_siswa, LAYOUT_ITEMHISTORYPELANGGARANSISWA);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_history_prestasi_siswa, LAYOUT_ITEMHISTORYPRESTASISISWA);
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_rangking_siswa, LAYOUT_ITEMRANGKINGSISWA);
     INTERNAL_LAYOUT_ID_LOOKUP.put(grack.dev.creditpointapp.R.layout.item_report, LAYOUT_ITEMREPORT);
   }
@@ -92,6 +104,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityDetailSiswaBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_detail_siswa is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYHISTORY: {
+          if ("layout/activity_history_0".equals(tag)) {
+            return new ActivityHistoryBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_history is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYINPUTPOINT: {
           if ("layout/activity_input_point_0".equals(tag)) {
@@ -159,6 +177,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for item_data_pelanggaran is invalid. Received: " + tag);
         }
+        case  LAYOUT_ITEMHISTORYPELANGGARANSISWA: {
+          if ("layout/item_history_pelanggaran_siswa_0".equals(tag)) {
+            return new ItemHistoryPelanggaranSiswaBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_history_pelanggaran_siswa is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMHISTORYPRESTASISISWA: {
+          if ("layout/item_history_prestasi_siswa_0".equals(tag)) {
+            return new ItemHistoryPrestasiSiswaBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_history_prestasi_siswa is invalid. Received: " + tag);
+        }
         case  LAYOUT_ITEMRANGKINGSISWA: {
           if ("layout/item_rangking_siswa_0".equals(tag)) {
             return new ItemRangkingSiswaBindingImpl(component, view);
@@ -216,21 +246,26 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(4);
+    static final SparseArray<String> sKeys = new SparseArray<String>(8);
 
     static {
       sKeys.put(0, "_all");
       sKeys.put(1, "model");
-      sKeys.put(2, "viewModel");
-      sKeys.put(3, "viewModelKonsultasi");
+      sKeys.put(2, "modelSiswa");
+      sKeys.put(3, "modelWaliMurid");
+      sKeys.put(4, "viewModel");
+      sKeys.put(5, "viewModelKonsultasi");
+      sKeys.put(6, "viewModelPelanggaran");
+      sKeys.put(7, "viewModelPrestasi");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(14);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(17);
 
     static {
       sKeys.put("layout/activity_detail_siswa_0", grack.dev.creditpointapp.R.layout.activity_detail_siswa);
+      sKeys.put("layout/activity_history_0", grack.dev.creditpointapp.R.layout.activity_history);
       sKeys.put("layout/activity_input_point_0", grack.dev.creditpointapp.R.layout.activity_input_point);
       sKeys.put("layout/activity_konsultasi_0", grack.dev.creditpointapp.R.layout.activity_konsultasi);
       sKeys.put("layout/activity_login_0", grack.dev.creditpointapp.R.layout.activity_login);
@@ -242,6 +277,8 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/item_data_informasi_0", grack.dev.creditpointapp.R.layout.item_data_informasi);
       sKeys.put("layout/item_data_konsultasi_siswa_0", grack.dev.creditpointapp.R.layout.item_data_konsultasi_siswa);
       sKeys.put("layout/item_data_pelanggaran_0", grack.dev.creditpointapp.R.layout.item_data_pelanggaran);
+      sKeys.put("layout/item_history_pelanggaran_siswa_0", grack.dev.creditpointapp.R.layout.item_history_pelanggaran_siswa);
+      sKeys.put("layout/item_history_prestasi_siswa_0", grack.dev.creditpointapp.R.layout.item_history_prestasi_siswa);
       sKeys.put("layout/item_rangking_siswa_0", grack.dev.creditpointapp.R.layout.item_rangking_siswa);
       sKeys.put("layout/item_report_0", grack.dev.creditpointapp.R.layout.item_report);
     }

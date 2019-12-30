@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatCheckBox;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
@@ -22,6 +23,9 @@ import java.lang.Object;
 public abstract class ActivityLoginBinding extends ViewDataBinding {
   @NonNull
   public final MaterialButton buttonLogin;
+
+  @NonNull
+  public final AppCompatCheckBox checkboxWaliMurid;
 
   @NonNull
   public final ConstraintLayout container;
@@ -45,11 +49,12 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
   protected LoginViewModel mViewModel;
 
   protected ActivityLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      MaterialButton buttonLogin, ConstraintLayout container, AppCompatImageView imageLogin,
-      TextInputEditText inputEmail, TextInputLayout inputLayoutEmail,
+      MaterialButton buttonLogin, AppCompatCheckBox checkboxWaliMurid, ConstraintLayout container,
+      AppCompatImageView imageLogin, TextInputEditText inputEmail, TextInputLayout inputLayoutEmail,
       TextInputLayout inputLayoutPassword, TextInputEditText inputPassword) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonLogin = buttonLogin;
+    this.checkboxWaliMurid = checkboxWaliMurid;
     this.container = container;
     this.imageLogin = imageLogin;
     this.inputEmail = inputEmail;

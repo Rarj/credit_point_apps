@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View.GONE
 import android.view.View.VISIBLE
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.jakewharton.rxbinding3.view.clicks
 import grack.dev.creditpointapp.R
@@ -14,6 +13,7 @@ import grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformas
 import grack.dev.creditpointapp.features.dashboard.ui.datapelanggaran.DataPelanggaranFragment
 import grack.dev.creditpointapp.features.dashboard.ui.kelas.KelasFragment
 import grack.dev.creditpointapp.features.dashboard.ui.rangking.RangkingSiswaFragment
+import grack.dev.creditpointapp.features.newdashboard.konsultasi.KonsultasiActivity
 import grack.dev.creditpointapp.preferences.SharedPref
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.concurrent.TimeUnit
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
     container_konsultasi.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
       .subscribe {
-        Toast.makeText(this, "Wait for backend to provide the datas", Toast.LENGTH_SHORT).show()
+        startActivity(Intent(this, KonsultasiActivity::class.java))
       }
 
     container_ranking.clicks().throttleFirst(500, TimeUnit.MILLISECONDS)
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     bottom_app_bar.setOnMenuItemClickListener {
       when (it.itemId) {
         R.id.app_bar_akun -> {
-
+          startActivity(Intent(this, ProfileActivity::class.java))
           true
         }
         else -> {

@@ -9,3 +9,12 @@ data class UserPreferences(
   var passwordAdmin: String?,
   var statusAdmin: String?
 )
+
+data class WaliMuridPreferences(
+  var idSiswa: String?,
+  var alamatAdmin: String?,
+  var emailAdmin: String?,
+  var idAdmin: String?,
+  var namaAdmin: String?,
+  var statusAdmin: String?
+)
