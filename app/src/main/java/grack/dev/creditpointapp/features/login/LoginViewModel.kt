@@ -29,7 +29,8 @@ class LoginViewModel : ViewModel() {
           it.user?.levelAdmin,
           it.user?.namaAdmin,
           it.user?.passwordAdmin,
-          it.user?.statusAdmin
+          it.user?.statusAdmin,
+          it.user?.foto
         )
 
         loginResponse.value = it
@@ -47,7 +48,11 @@ class LoginViewModel : ViewModel() {
           it.user?.emailAdmin,
           it.user?.idAdmin,
           it.user?.namaAdmin,
-          it.user?.statusAdmin
+          it.user?.statusAdmin,
+          it.waliMurid[0].siswaPointSiswa,
+          it.waliMurid[0].idWaliMurid,
+          it.user?.passwordAdmin,
+          it.waliMurid[0].jenisKelamin
         )
 
         it

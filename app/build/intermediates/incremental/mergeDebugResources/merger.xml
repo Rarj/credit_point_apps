@@ -267,6 +267,11 @@
     </declare-styleable><declare-styleable name="StateListDrawableItem">
         
         <attr name="android:drawable"/>
+    </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="de.hdodenhof:circleimageview:3.0.1$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/e84cee6509323767effe092ef1e230fd/jetified-circleimageview-3.0.1/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="de.hdodenhof:circleimageview:3.0.1" from-dependency="true" generated-set="de.hdodenhof:circleimageview:3.0.1$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/e84cee6509323767effe092ef1e230fd/jetified-circleimageview-3.0.1/res"><file path="/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/e84cee6509323767effe092ef1e230fd/jetified-circleimageview-3.0.1/res/values/values.xml" qualifiers=""><declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_circle_background_color"/>
     </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.whiteelephant:monthandyearpicker:1.3.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1f77d1287876d2bab3ce75599ef33329/jetified-monthandyearpicker-1.3.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.whiteelephant:monthandyearpicker:1.3.0" from-dependency="true" generated-set="com.whiteelephant:monthandyearpicker:1.3.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1f77d1287876d2bab3ce75599ef33329/jetified-monthandyearpicker-1.3.0/res"><file path="/Users/rioarjuna/.gradle/caches/transforms-2/files-2.1/1f77d1287876d2bab3ce75599ef33329/jetified-monthandyearpicker-1.3.0/res/values/values.xml" qualifiers=""><color name="fontBlackDisable">#50000000</color><color name="fontBlackEnable">#000000</color><color name="fontWhiteDisable">#85FFFFFF</color><color name="fontWhiteEnable">#FFF</color><declare-styleable name="monthPickerDialog"><attr format="color" name="headerTitleColor"/><attr format="color" name="headerBgColor"/><attr format="color" name="headerFontColorSelected"/><attr format="color" name="headerFontColorNormal"/><attr format="color" name="monthBgColor"/><attr format="color" name="monthBgSelectedColor"/><attr format="color" name="monthFontColorSelected"/><attr format="color" name="monthFontColorNormal"/><attr format="color" name="monthFontColorDisabled"/><attr format="color" name="dialogActionButtonColor"/></declare-styleable><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="datepicker_view_animator_height">50dp</dimen><dimen name="datepicker_year_label_height">50dp</dimen><string name="app_name">MonthAndYear Picker</string><string name="label_month">MONTH</string><string name="label_year">YEAR</string><style name="AppTheme" parent="Theme.AppCompat"/><style name="MonthPickerDialogStyle">
         
        
@@ -7057,6 +7062,11 @@
         <attr name="android:drawable"/>
         
         <attr name="android:id"/>
+    </declare-styleable><declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_circle_background_color"/>
     </declare-styleable><declare-styleable name="ScrollingViewBehavior_Layout">
     
     <attr format="dimension" name="behavior_overlapTop"/>

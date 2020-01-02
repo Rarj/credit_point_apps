@@ -37,6 +37,7 @@ class WaliMuridActivity : AppCompatActivity() {
         val intent = Intent(this, DetailSiswaActivity::class.java)
         intent.putExtra("key_id_siswa", SharedPref.getWaliMurid(this).idSiswa)
         intent.putExtra("wali_murid", "wali_murid")
+        intent.putExtra("sisa_point_siswa", SharedPref.getWaliMurid(this).sisaPointSiswa)
         startActivity(intent)
       }
 

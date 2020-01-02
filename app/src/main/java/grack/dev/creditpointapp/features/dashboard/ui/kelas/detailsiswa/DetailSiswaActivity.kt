@@ -33,9 +33,11 @@ class DetailSiswaActivity : AppCompatActivity() {
 
     val intentKeyId = intent.getStringExtra("key_id_siswa")
     val intentFlag = intent.getStringExtra("wali_murid")
+    val intentSisaPointSiswa = intent.getStringExtra("sisa_point_siswa")
 
     if (intentFlag == "wali_murid") {
       binding.buttonInput.visibility = GONE
+      binding.textTitle.text = "Detail Siswa \nSisa Point adalah $intentSisaPointSiswa"
     } else {
       binding.buttonInput.visibility = VISIBLE
     }

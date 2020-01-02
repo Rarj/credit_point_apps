@@ -10,6 +10,8 @@ data class User(
   var emailAdmin: String?,
   @SerializedName("id_admin")
   var idAdmin: String?,
+  @SerializedName("foto")
+  var foto: String?,
   @SerializedName("level_admin")
   var levelAdmin: String?,
   @SerializedName("nama_admin")

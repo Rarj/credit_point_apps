@@ -21,5 +21,7 @@ data class WaliMurid(
   @SerializedName("nama_wali_murid")
   var namaWaliMurid: String?,
   @SerializedName("no_hp")
-  var noHp: String?
+  var noHp: String?,
+  @SerializedName("sisa_point_siswa")
+  var siswaPointSiswa: String?
 )

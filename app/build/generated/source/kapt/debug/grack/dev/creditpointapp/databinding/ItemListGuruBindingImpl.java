@@ -93,17 +93,17 @@ public class ItemListGuruBindingImpl extends ItemListGuruBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        java.lang.String modelGuruTglLahirGuru = null;
         java.lang.String modelGuruTempatLahirGuruJavaLangString = null;
+        java.lang.String modelGuruTglLahirGuru = null;
+        java.lang.String modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuruJavaLangStringN = null;
         java.lang.String modelGuruNamaGuruJavaLangStringModelGuruNik = null;
         java.lang.String modelGuruNamaGuruJavaLangString = null;
         java.lang.String modelGuruTempatLahirGuru = null;
-        java.lang.String modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuru = null;
-        java.lang.String modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuruJavaLangStringN = null;
-        java.lang.String modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuruJavaLangStringNModelGuruNoHp = null;
         java.lang.String modelGuruNoHp = null;
+        java.lang.String modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuruJavaLangStringNModelGuruNoHp = null;
         grack.dev.creditpointapp.repository.guru.model.Guru modelGuru = mModelGuru;
         java.lang.String modelGuruNik = null;
+        java.lang.String modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuru = null;
         java.lang.String modelGuruNamaGuru = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
@@ -124,23 +124,23 @@ public class ItemListGuruBindingImpl extends ItemListGuruBinding  {
                 }
 
 
-                // read (modelGuru.tempatLahirGuru) + ("")
-                modelGuruTempatLahirGuruJavaLangString = (modelGuruTempatLahirGuru) + ("");
+                // read (modelGuru.tempatLahirGuru) + (", ")
+                modelGuruTempatLahirGuruJavaLangString = (modelGuruTempatLahirGuru) + (", ");
                 // read (modelGuru.namaGuru) + (" - ")
                 modelGuruNamaGuruJavaLangString = (modelGuruNamaGuru) + (" - ");
 
 
-                // read ((modelGuru.tempatLahirGuru) + ("")) + (modelGuru.tglLahirGuru)
+                // read ((modelGuru.tempatLahirGuru) + (", ")) + (modelGuru.tglLahirGuru)
                 modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuru = (modelGuruTempatLahirGuruJavaLangString) + (modelGuruTglLahirGuru);
                 // read ((modelGuru.namaGuru) + (" - ")) + (modelGuru.nik)
                 modelGuruNamaGuruJavaLangStringModelGuruNik = (modelGuruNamaGuruJavaLangString) + (modelGuruNik);
 
 
-                // read (((modelGuru.tempatLahirGuru) + ("")) + (modelGuru.tglLahirGuru)) + ("\n")
+                // read (((modelGuru.tempatLahirGuru) + (", ")) + (modelGuru.tglLahirGuru)) + ("\n")
                 modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuruJavaLangStringN = (modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuru) + ("\n");
 
 
-                // read ((((modelGuru.tempatLahirGuru) + ("")) + (modelGuru.tglLahirGuru)) + ("\n")) + (modelGuru.noHp)
+                // read ((((modelGuru.tempatLahirGuru) + (", ")) + (modelGuru.tglLahirGuru)) + ("\n")) + (modelGuru.noHp)
                 modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuruJavaLangStringNModelGuruNoHp = (modelGuruTempatLahirGuruJavaLangStringModelGuruTglLahirGuruJavaLangStringN) + (modelGuruNoHp);
         }
         // batch finished

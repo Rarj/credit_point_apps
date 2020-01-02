@@ -2,6 +2,7 @@ package grack.dev.creditpointapp.features.guru
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
@@ -25,6 +26,7 @@ class GuruActivity : AppCompatActivity() {
 
     viewModel.loadListGuru()
       .subscribe {
+        binding.progressHorizontal.visibility = GONE
         adapterGuru = GuruAdapter(it)
         binding.recyclerDataGuru.apply {
           layoutManager = LinearLayoutManager(this@GuruActivity)

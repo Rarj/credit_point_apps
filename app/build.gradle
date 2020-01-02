@@ -96,4 +96,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleExtensionsVersion"
 
     implementation "com.whiteelephant:monthandyearpicker:$monthYearPickerVersion"
+
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
 }

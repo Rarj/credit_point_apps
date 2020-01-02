@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.features.login.LoginActivity
 import grack.dev.creditpointapp.preferences.SharedPref
@@ -16,11 +17,15 @@ class ProfileActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_profile)
 
-    text_profile.text =
-      "Selamat datang, ${SharedPref.getUser(this).namaAdmin}! " +
-            "\nEmail : ${SharedPref.getUser(this).emailAdmin} " +
-            "\nAlamat : ${SharedPref.getUser(this).alamatAdmin} " +
-            "\nStatus : ${SharedPref.getUser(this).statusAdmin}"
+    if (SharedPref.getUser(this).foto.isNullOrEmpty()) {
+      Glide.with(this).load(R.drawable.ic_teacher_2).into(profile_image)
+    } else {
+      Glide.with(this).load(SharedPref.getUser(this).foto).into(profile_image)
+    }
+    text_status.text = SharedPref.getUser(this).statusAdmin
+    text_nama.text = SharedPref.getUser(this).namaAdmin
+    text_email.text = SharedPref.getUser(this).emailAdmin
+    text_alamat.text = SharedPref.getUser(this).alamatAdmin
 
     button_back.setOnClickListener { finish() }
 

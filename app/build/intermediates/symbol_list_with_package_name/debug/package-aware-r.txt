@@ -199,6 +199,10 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1825,6 +1829,7 @@ id peekHeight
 id percent
 id picker_view
 id pin
+id profile_image
 id progress_circular
 id progress_horizontal
 id radio
@@ -1908,6 +1913,7 @@ id textSpacerNoTitle
 id textStart
 id textWatcher
 id text_address_siswa
+id text_alamat
 id text_alamat_ayah_siswa
 id text_alamat_ibu_siswa
 id text_anak_ke_siswa
@@ -1921,6 +1927,7 @@ id text_creator_informasi
 id text_date
 id text_date_birth_siswa
 id text_date_created
+id text_email
 id text_email_wali_murid
 id text_empty_caption
 id text_gender_siswa
@@ -1934,6 +1941,7 @@ id text_keterangan_point
 id text_konsultasi
 id text_level_user
 id text_list_guru
+id text_nama
 id text_nama_ayah_siswa
 id text_nama_guru
 id text_nama_ibu_siswa
@@ -1954,6 +1962,7 @@ id text_point
 id text_profile
 id text_ranking
 id text_report
+id text_status
 id text_subtitle
 id text_subtitle_caption_header
 id text_tanggal_informasi
@@ -2993,6 +3002,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

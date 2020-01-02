@@ -14,6 +14,7 @@ object SharedPref {
     editor.putString("nama_admin", userModel?.namaAdmin)
     editor.putString("password_admin", userModel?.passwordAdmin)
     editor.putString("statusAdmin", userModel?.statusAdmin)
+    editor.putString("foto", userModel?.foto)
     editor.apply()
   }
 
@@ -26,6 +27,7 @@ object SharedPref {
     val namaAdmin = preferences.getString("nama_admin", "")
     val passwordAdmin = preferences.getString("password_admin", "")
     val statusAdmin = preferences.getString("statusAdmin", "")
+    val foto = preferences.getString("foto", "")
     return UserPreferences(
       alamatAdmin,
       emailAdmin,
@@ -33,7 +35,8 @@ object SharedPref {
       levelAdmin,
       namaAdmin,
       passwordAdmin,
-      statusAdmin
+      statusAdmin,
+      foto
     )
   }
 
@@ -41,11 +44,15 @@ object SharedPref {
     val preferences = PreferenceManager.getDefaultSharedPreferences(context)
     val editor = preferences.edit()
     editor.putString("id_siswa", userModel?.idSiswa)
+    editor.putString("id_admin", userModel?.idAdmin)
     editor.putString("alamat_admin", userModel?.alamatAdmin)
     editor.putString("email_admin", userModel?.emailAdmin)
-    editor.putString("id_admin", userModel?.idAdmin)
     editor.putString("nama_admin", userModel?.namaAdmin)
     editor.putString("status_admin", userModel?.statusAdmin)
+    editor.putString("sisa_point_siswa", userModel?.sisaPointSiswa)
+    editor.putString("id_wali_murid", userModel?.idAdmin)
+    editor.putString("jenis_kelamin", userModel?.emailAdmin)
+    editor.putString("password_admin", userModel?.passwordWaliMurid)
     editor.apply()
   }
 
@@ -57,6 +64,9 @@ object SharedPref {
     val idAdmin = preferences.getString("id_admin", "")
     val namaAdmin = preferences.getString("nama_admin", "")
     val statusAdmin = preferences.getString("status_admin", "")
+    val sisaPointSiswa = preferences.getString("sisa_point_siswa", "")
+    val jenisKelamin = preferences.getString("jenis_kelamin", "")
+    val passwordWaliMurid = preferences.getString("password_admin", "")
 
     return WaliMuridPreferences(
       idSiswa,
@@ -64,7 +74,11 @@ object SharedPref {
       emailAdmin,
       idAdmin,
       namaAdmin,
-      statusAdmin
+      statusAdmin,
+      sisaPointSiswa,
+      jenisKelamin,
+      passwordWaliMurid,
+      jenisKelamin
     )
   }
 
