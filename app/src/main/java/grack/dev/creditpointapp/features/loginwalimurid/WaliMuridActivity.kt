@@ -8,6 +8,7 @@ import com.jakewharton.rxbinding3.view.clicks
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformasiFragment
 import grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity
+import grack.dev.creditpointapp.features.guru.GuruActivity
 import grack.dev.creditpointapp.features.login.LoginActivity
 import grack.dev.creditpointapp.features.loginwalimurid.history.HistoryActivity
 import grack.dev.creditpointapp.preferences.SharedPref
@@ -54,6 +55,13 @@ class WaliMuridActivity : AppCompatActivity() {
       startActivity(Intent(this, LoginActivity::class.java))
       finishAffinity()
     }
+
+    container_list_guru.clicks()
+      .throttleFirst(500, TimeUnit.MILLISECONDS)
+      .subscribe {
+        val intent = Intent(this, GuruActivity::class.java)
+        startActivity(intent)
+      }
 
   }
 }

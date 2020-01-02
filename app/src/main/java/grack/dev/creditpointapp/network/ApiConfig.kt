@@ -3,6 +3,7 @@ package grack.dev.creditpointapp.network
 import grack.dev.creditpointapp.repository.datainformasi.model.DataInformasiResponse
 import grack.dev.creditpointapp.repository.datapelanggaran.model.DataPelanggaran
 import grack.dev.creditpointapp.repository.detailsiswa.detail.DetailSiswaResponse
+import grack.dev.creditpointapp.repository.guru.model.GuruResponse
 import grack.dev.creditpointapp.repository.inputpoint.model.InputPointRequest
 import grack.dev.creditpointapp.repository.inputpoint.model.InputPointResponse
 import grack.dev.creditpointapp.repository.kelas.model.kategorikelas.KategoriKelasResponse
@@ -67,4 +68,8 @@ interface ApiConfig {
 
   @GET("siswa/detail-pelanggaran")
   fun historyPelanggaran(@Query("id_siswa") id_siswa: String): Observable<HistoryResponse>
+
+  @GET("guru")
+
+  fun listGuru(): Observable<GuruResponse>
 }

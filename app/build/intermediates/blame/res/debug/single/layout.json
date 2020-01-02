@@ -4,6 +4,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_data_informasi.xml"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_guru.xml",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_guru.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_kelas.xml",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/fragment_kelas.xml"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_input_point.xml",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_input_point.xml"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_list_guru.xml",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_list_guru.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_rangking_siswa.xml",

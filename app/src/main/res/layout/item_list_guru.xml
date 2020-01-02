@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+    <variable
+      name="modelGuru"
+      type="grack.dev.creditpointapp.repository.guru.model.Guru" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_nama_guru"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@{modelGuru.namaGuru + ` - ` + modelGuru.nik}"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Guru Galak - 60228292929293" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_ttl_guru"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@{modelGuru.tempatLahirGuru + `, ` + modelGuru.tglLahirGuru + `\n` + modelGuru.noHp}"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_nama_guru"
+      tools:text="Tangerang, 1999-01-01\n 082232983928" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

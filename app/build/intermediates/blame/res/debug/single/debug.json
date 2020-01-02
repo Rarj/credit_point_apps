@@ -108,12 +108,12 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_report.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_whatsapp.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_whatsapp.png"
-    },
-    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_class.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_class.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_whatsapp.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_whatsapp.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_genders.xml.flat",
@@ -256,6 +256,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_place.png"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_activity_guru.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_guru.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
     },
@@ -328,8 +332,16 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_empty_data.png"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_item_list_guru.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_list_guru.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_teacher_2.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_teacher_2.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_place.png.flat",
@@ -468,6 +480,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_data_konsultasi_siswa.xml"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_teacher_2.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_teacher_2.xml"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_family.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_family.png"
     },
@@ -490,6 +506,10 @@
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_activity_konsultasi.xml.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_konsultasi.xml"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_teacher_2.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_teacher_2.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_place.xml.flat",
@@ -552,12 +572,12 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/menu/dashboard.xml"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_account.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_account.png"
-    },
-    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_item_data_informasi.xml.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_data_informasi.xml"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_account.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_account.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_account_circle.png.flat",
@@ -792,6 +812,10 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_report.png"
     },
     {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_teacher_2.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_teacher_2.png"
+    },
+    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_timeline.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_timeline.png"
     },
@@ -900,16 +924,20 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_login.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_place.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_place.png"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_input.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_input.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_salary.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_salary.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_input.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_input.png"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_place.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_place.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_teacher_2.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_teacher_2.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_konsultasi.png.flat",
@@ -1008,20 +1036,24 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_account.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_account.png"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_attachment_file.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_attachment_file.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_item_report.xml.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_report.xml"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_attachment_file.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_attachment_file.png"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_account.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_account.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_search.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_teacher_2.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_teacher_2.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_guru_bk.png.flat",
@@ -1166,6 +1198,10 @@
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_class.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_class.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_teacher_2.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_teacher_2.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_class.png.flat",

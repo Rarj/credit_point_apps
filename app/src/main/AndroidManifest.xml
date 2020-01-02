@@ -12,7 +12,8 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".features.loginwalimurid.history.HistoryActivity"></activity>
+    <activity android:name=".features.guru.GuruActivity"></activity>
+    <activity android:name=".features.loginwalimurid.history.HistoryActivity" />
     <activity android:name=".features.loginwalimurid.WaliMuridActivity" />
     <activity android:name=".features.newdashboard.ProfileActivity" />
     <activity
