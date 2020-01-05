@@ -23,3 +23,12 @@ data class WaliMuridPreferences(
   var passwordWaliMurid: String?,
   var jenisKelaminWaliMurid: String?
 )
+
+data class UpdateWaliMuridPreferences(
+  var id_wali_murid: String?,
+  var nama_wali_murid: String?,
+  var alamat_wali_murid: String?,
+  var jenis_kelamin: String?,
+  var email_wali_murid: String?,
+  var password_wali_murid: String?
+)

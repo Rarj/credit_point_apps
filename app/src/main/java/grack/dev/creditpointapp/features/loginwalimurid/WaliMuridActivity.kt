@@ -1,6 +1,7 @@
 package grack.dev.creditpointapp.features.loginwalimurid
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,7 @@ import grack.dev.creditpointapp.features.dashboard.ui.datainformasi.DataInformas
 import grack.dev.creditpointapp.features.dashboard.ui.kelas.detailsiswa.DetailSiswaActivity
 import grack.dev.creditpointapp.features.guru.GuruActivity
 import grack.dev.creditpointapp.features.login.LoginActivity
+import grack.dev.creditpointapp.features.loginwalimurid.editprofile.EditProfileActivity
 import grack.dev.creditpointapp.features.loginwalimurid.history.HistoryActivity
 import grack.dev.creditpointapp.preferences.SharedPref
 import kotlinx.android.synthetic.main.activity_wali_murid.*
@@ -64,5 +66,26 @@ class WaliMuridActivity : AppCompatActivity() {
         startActivity(intent)
       }
 
+    button_edit_profile.clicks()
+      .throttleFirst(500, TimeUnit.MILLISECONDS)
+      .subscribe {
+        val intent = Intent(this, EditProfileActivity::class.java)
+        startActivityForResult(intent, 200)
+      }
   }
+
+  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    super.onActivityResult(requestCode, resultCode, data)
+
+    val isSuccess = data?.getStringExtra("status")
+
+    if (requestCode == 200 && resultCode == Activity.RESULT_OK) {
+      if (isSuccess == "success") {
+        text_nama_wali_murid.text = SharedPref.getWaliMurid(this).namaAdmin
+        text_level_user.text = SharedPref.getWaliMurid(this).statusAdmin
+      }
+    }
+
+  }
+
 }

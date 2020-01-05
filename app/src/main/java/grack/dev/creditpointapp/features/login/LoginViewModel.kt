@@ -47,7 +47,7 @@ class LoginViewModel : ViewModel() {
           it.user?.alamatAdmin,
           it.user?.emailAdmin,
           it.user?.idAdmin,
-          it.user?.namaAdmin,
+          it.waliMurid[0].namaWaliMurid,
           it.user?.statusAdmin,
           it.waliMurid[0].siswaPointSiswa,
           it.waliMurid[0].idWaliMurid,

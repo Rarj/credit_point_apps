@@ -1,5 +1,6 @@
 package grack.dev.creditpointapp.network
 
+import grack.dev.creditpointapp.preferences.UpdateWaliMuridPreferences
 import grack.dev.creditpointapp.repository.datainformasi.model.DataInformasiResponse
 import grack.dev.creditpointapp.repository.datapelanggaran.model.DataPelanggaran
 import grack.dev.creditpointapp.repository.detailsiswa.detail.DetailSiswaResponse
@@ -12,6 +13,7 @@ import grack.dev.creditpointapp.repository.kelas.model.siswa.siswa.DataSiswaResp
 import grack.dev.creditpointapp.repository.konsultasi.model.KonsultasiResponse
 import grack.dev.creditpointapp.repository.login.LoginRequest
 import grack.dev.creditpointapp.repository.login.model.LoginResponse
+import grack.dev.creditpointapp.repository.loginwalimurid.editwalimurid.UpdateProfileWaliMuridResponse
 import grack.dev.creditpointapp.repository.loginwalimurid.history.model.HistoryResponse
 import grack.dev.creditpointapp.repository.loginwalimurid.model.LoginWaliMuridResponse
 import grack.dev.creditpointapp.repository.rangking.model.RangkingResponse
@@ -70,6 +72,8 @@ interface ApiConfig {
   fun historyPelanggaran(@Query("id_siswa") id_siswa: String): Observable<HistoryResponse>
 
   @GET("guru")
-
   fun listGuru(): Observable<GuruResponse>
+
+  @POST("wali-murid/update-profile")
+  fun updateProfileWaliMurid(@Body requestModel: UpdateWaliMuridPreferences?): Observable<UpdateProfileWaliMuridResponse>
 }

@@ -1454,6 +1454,7 @@ drawable ic_account_circle
 drawable ic_arrow_left
 drawable ic_attachment_file
 drawable ic_baby
+drawable ic_baseline_close_24
 drawable ic_calendar
 drawable ic_calendar_black_24dp
 drawable ic_cell_phone
@@ -1618,6 +1619,8 @@ id button_back
 id button_back_input
 id button_back_pelanggaran
 id button_back_report
+id button_close
+id button_edit_profile
 id button_export
 id button_input
 id button_login
@@ -1627,6 +1630,7 @@ id button_report_bulanan
 id button_report_harian
 id button_report_tahunan
 id button_save
+id button_update_profile
 id button_whatsapp
 id cancel_action
 id cancel_button
@@ -1693,6 +1697,11 @@ id disableHome
 id drawer_layout
 id drawer_layout_bk
 id dropdown_menu
+id edit_alamat
+id edit_email
+id edit_jenis_kelamin
+id edit_nama
+id edit_password
 id edit_query
 id email_admin
 id end
@@ -1740,7 +1749,9 @@ id image_profile
 id image_search
 id info
 id input_email
+id input_layout_alamat
 id input_layout_email
+id input_layout_nama
 id input_layout_password
 id input_password
 id invisible
@@ -2068,6 +2079,7 @@ layout abc_tooltip
 layout activity_dashboard
 layout activity_dashboard_bk
 layout activity_detail_siswa
+layout activity_edit_profile
 layout activity_guru
 layout activity_history
 layout activity_input_point

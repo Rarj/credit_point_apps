@@ -40,6 +40,18 @@ object SharedPref {
     )
   }
 
+  fun updateWaliMurid(userModel: UpdateWaliMuridPreferences?, context: Context?) {
+    val preferences = PreferenceManager.getDefaultSharedPreferences(context)
+    val editor = preferences.edit()
+    editor.putString("alamat_admin", userModel?.alamat_wali_murid)
+    editor.putString("email_admin", userModel?.email_wali_murid)
+    editor.putString("nama_admin", userModel?.nama_wali_murid)
+    editor.putString("id_wali_murid", userModel?.id_wali_murid)
+    editor.putString("jenis_kelamin", userModel?.jenis_kelamin)
+    editor.putString("password_admin", userModel?.password_wali_murid)
+    editor.apply()
+  }
+
   fun saveWaliMurid(userModel: WaliMuridPreferences?, context: Context?) {
     val preferences = PreferenceManager.getDefaultSharedPreferences(context)
     val editor = preferences.edit()
@@ -50,8 +62,8 @@ object SharedPref {
     editor.putString("nama_admin", userModel?.namaAdmin)
     editor.putString("status_admin", userModel?.statusAdmin)
     editor.putString("sisa_point_siswa", userModel?.sisaPointSiswa)
-    editor.putString("id_wali_murid", userModel?.idAdmin)
-    editor.putString("jenis_kelamin", userModel?.emailAdmin)
+    editor.putString("id_wali_murid", userModel?.idWaliMurid)
+    editor.putString("jenis_kelamin", userModel?.jenisKelaminWaliMurid)
     editor.putString("password_admin", userModel?.passwordWaliMurid)
     editor.apply()
   }
@@ -65,6 +77,7 @@ object SharedPref {
     val namaAdmin = preferences.getString("nama_admin", "")
     val statusAdmin = preferences.getString("status_admin", "")
     val sisaPointSiswa = preferences.getString("sisa_point_siswa", "")
+    val idWaliMurid = preferences.getString("id_wali_murid", "")
     val jenisKelamin = preferences.getString("jenis_kelamin", "")
     val passwordWaliMurid = preferences.getString("password_admin", "")
 
@@ -76,7 +89,7 @@ object SharedPref {
       namaAdmin,
       statusAdmin,
       sisaPointSiswa,
-      jenisKelamin,
+      idWaliMurid,
       passwordWaliMurid,
       jenisKelamin
     )
