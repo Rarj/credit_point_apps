@@ -20,7 +20,9 @@ public class ActivityInputPointBindingImpl extends ActivityInputPointBinding  {
         sViewsWithIds.put(R.id.text_subtitle, 4);
         sViewsWithIds.put(R.id.text_caption_input_point, 5);
         sViewsWithIds.put(R.id.spinner_input, 6);
-        sViewsWithIds.put(R.id.button_save, 7);
+        sViewsWithIds.put(R.id.text_caption_input_point_list, 7);
+        sViewsWithIds.put(R.id.spinner_input_list, 8);
+        sViewsWithIds.put(R.id.button_save, 9);
     }
     // views
     @NonNull
@@ -31,14 +33,16 @@ public class ActivityInputPointBindingImpl extends ActivityInputPointBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityInputPointBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private ActivityInputPointBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (androidx.appcompat.widget.AppCompatImageButton) bindings[2]
-            , (com.google.android.material.button.MaterialButton) bindings[7]
+            , (com.google.android.material.button.MaterialButton) bindings[9]
             , (androidx.appcompat.widget.AppCompatSpinner) bindings[6]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]

@@ -65,11 +65,12 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
       android:layout_marginEnd="16dp"
-      android:text="Jenis Pelanggaran : "
+      android:text="Jenis Poin : "
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:visibility="gone"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/toolbar" />
+      app:layout_constraintTop_toBottomOf="@id/spinner_input_list" />
 
     <androidx.appcompat.widget.AppCompatSpinner
       android:id="@+id/spinner_input"
@@ -77,9 +78,38 @@
       android:layout_height="56dp"
       android:layout_marginStart="16dp"
       android:layout_marginEnd="16dp"
+      android:visibility="gone"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/text_caption_input_point" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_caption_input_point_list"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:text="Pilih Poin : "
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/spinner_input_list"
+      android:layout_width="0dp"
+      android:layout_height="56dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="28dp"
+      android:drawableEnd="@drawable/ic_baseline_expand_more_24"
+      android:gravity="center_vertical"
+      android:maxLines="1"
+      android:text="--------------------"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_caption_input_point_list" />
+
 
     <com.google.android.material.button.MaterialButton
       android:id="@+id/button_save"

@@ -35,6 +35,9 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
   public final MaterialCardView containerDataIbu;
 
   @NonNull
+  public final ConstraintLayout containerDetailSiswa;
+
+  @NonNull
   public final ScrollView containerScroll;
 
   @NonNull
@@ -111,8 +114,8 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
 
   protected ActivityDetailSiswaBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageButton buttonBack, MaterialButton buttonInput, MaterialCardView containerDataAyah,
-      MaterialCardView containerDataIbu, ScrollView containerScroll,
-      MaterialCardView containerSiswa, ProgressBar progressHorizontal,
+      MaterialCardView containerDataIbu, ConstraintLayout containerDetailSiswa,
+      ScrollView containerScroll, MaterialCardView containerSiswa, ProgressBar progressHorizontal,
       AppCompatTextView textAddressSiswa, AppCompatTextView textAlamatAyahSiswa,
       AppCompatTextView textAlamatIbuSiswa, AppCompatTextView textAnakKeSiswa,
       AppCompatTextView textCaptionParent1, AppCompatTextView textCaptionParent2,
@@ -129,6 +132,7 @@ public abstract class ActivityDetailSiswaBinding extends ViewDataBinding {
     this.buttonInput = buttonInput;
     this.containerDataAyah = containerDataAyah;
     this.containerDataIbu = containerDataIbu;
+    this.containerDetailSiswa = containerDetailSiswa;
     this.containerScroll = containerScroll;
     this.containerSiswa = containerSiswa;
     this.progressHorizontal = progressHorizontal;

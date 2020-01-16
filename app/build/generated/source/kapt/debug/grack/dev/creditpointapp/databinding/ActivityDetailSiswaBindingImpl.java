@@ -27,8 +27,6 @@ public class ActivityDetailSiswaBindingImpl extends ActivityDetailSiswaBinding  
         sViewsWithIds.put(R.id.button_input, 28);
     }
     // views
-    @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -43,6 +41,7 @@ public class ActivityDetailSiswaBindingImpl extends ActivityDetailSiswaBinding  
             , (com.google.android.material.button.MaterialButton) bindings[28]
             , (com.google.android.material.card.MaterialCardView) bindings[25]
             , (com.google.android.material.card.MaterialCardView) bindings[27]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (android.widget.ScrollView) bindings[22]
             , (com.google.android.material.card.MaterialCardView) bindings[23]
             , (android.widget.ProgressBar) bindings[21]
@@ -68,8 +67,7 @@ public class ActivityDetailSiswaBindingImpl extends ActivityDetailSiswaBinding  
             , (androidx.appcompat.widget.AppCompatTextView) bindings[20]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[18]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.containerDetailSiswa.setTag(null);
         this.textAddressSiswa.setTag(null);
         this.textAlamatAyahSiswa.setTag(null);
         this.textAlamatIbuSiswa.setTag(null);

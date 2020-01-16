@@ -20,9 +20,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
-      <activity android:name="grack.dev.creditpointapp.features.loginwalimurid.editprofile.EditProfileActivity" />
+        <activity android:name="grack.dev.creditpointapp.features.loginwalimurid.editprofile.EditProfileActivity" />
         <activity android:name="grack.dev.creditpointapp.features.guru.GuruActivity" />
         <activity android:name="grack.dev.creditpointapp.features.loginwalimurid.history.HistoryActivity" />
         <activity android:name="grack.dev.creditpointapp.features.loginwalimurid.WaliMuridActivity" />

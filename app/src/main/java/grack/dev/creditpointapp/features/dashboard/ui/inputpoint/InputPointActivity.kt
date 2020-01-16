@@ -6,6 +6,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -15,6 +17,8 @@ import androidx.lifecycle.ViewModelProviders
 import com.jakewharton.rxbinding3.view.clicks
 import grack.dev.creditpointapp.R
 import grack.dev.creditpointapp.databinding.ActivityInputPointBinding
+import grack.dev.creditpointapp.features.dashboard.ui.jenispelanggaran.ItemClickListener
+import grack.dev.creditpointapp.features.dashboard.ui.jenispelanggaran.JenisPelanggaranFragment
 import grack.dev.creditpointapp.preferences.SharedPref
 import grack.dev.creditpointapp.repository.datapelanggaran.model.Point
 import grack.dev.creditpointapp.repository.inputpoint.model.InputPointRequest
@@ -26,6 +30,8 @@ class InputPointActivity : AppCompatActivity() {
   lateinit var binding: ActivityInputPointBinding
 
   private lateinit var idPoint: String
+
+  val pointList = ArrayList<Point>()
 
   @SuppressLint("CheckResult")
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,31 +50,23 @@ class InputPointActivity : AppCompatActivity() {
       finish()
     }
 
-    viewModel.loadPoint()
-      .subscribe {
-        val pointList = ArrayList<Point>()
-        pointList.add(Point())
+    binding.spinnerInputList.setOnClickListener {
+      val bottomSheetFragment = JenisPelanggaranFragment(object : ItemClickListener {
+        override fun onItemClicked(jenisPoin: String) {
+          binding.spinnerInputList.text = jenisPoin
+          if (jenisPoin.isNotBlank()) {
+            binding.spinnerInput.visibility = VISIBLE
+            binding.textCaptionInputPoint.visibility = VISIBLE
 
-        it.point.forEach { point ->
-          pointList.add(point)
-        }
-
-        val arrayAdapter = ArrayAdapter<Point>(this, android.R.layout.simple_spinner_item, pointList)
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.spinnerInput.adapter = arrayAdapter
-
-        binding.spinnerInput.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-          override fun onNothingSelected(parent: AdapterView<*>?) {
-            binding.spinnerInput.setSelection(0)
-          }
-
-          override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-            idPoint = arrayAdapter.getItem(position)?.idPoint ?: ""
-
-            binding.buttonSave.isEnabled = idPoint != ""
+            load(jenisPoin)
+          } else {
+            binding.spinnerInput.visibility = GONE
+            binding.textCaptionInputPoint.visibility = GONE
           }
         }
-      }
+      })
+      bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
+    }
 
     binding.buttonSave.isEnabled = false
 
@@ -89,6 +87,38 @@ class InputPointActivity : AppCompatActivity() {
             Toast.makeText(this, "Terjadi kesalahan. Silahkan coba lagi, yaa.", Toast.LENGTH_SHORT).show()
           })
       }
-
   }
+
+  @SuppressLint("CheckResult")
+  private fun load(jenispoint: String) {
+    viewModel.loadPoint()
+      .subscribe {
+        pointList.add(Point())
+
+        it.point.forEach { point ->
+          pointList.add(point)
+        }
+
+        val filter = it.point.filter { data ->
+          data.kategori == jenispoint
+        }
+
+        val arrayAdapter = ArrayAdapter<Point>(this, android.R.layout.simple_spinner_item, filter)
+        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerInput.adapter = arrayAdapter
+
+        binding.spinnerInput.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+          override fun onNothingSelected(parent: AdapterView<*>?) {
+            binding.spinnerInput.setSelection(0)
+          }
+
+          override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            idPoint = arrayAdapter.getItem(position)?.idPoint ?: ""
+
+            binding.buttonSave.isEnabled = idPoint != ""
+          }
+        }
+      }
+  }
+
 }

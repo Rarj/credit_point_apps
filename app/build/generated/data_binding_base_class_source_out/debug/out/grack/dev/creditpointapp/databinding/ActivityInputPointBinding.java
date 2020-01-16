@@ -28,7 +28,13 @@ public abstract class ActivityInputPointBinding extends ViewDataBinding {
   public final AppCompatSpinner spinnerInput;
 
   @NonNull
+  public final AppCompatTextView spinnerInputList;
+
+  @NonNull
   public final AppCompatTextView textCaptionInputPoint;
+
+  @NonNull
+  public final AppCompatTextView textCaptionInputPointList;
 
   @NonNull
   public final AppCompatTextView textSubtitle;
@@ -41,13 +47,16 @@ public abstract class ActivityInputPointBinding extends ViewDataBinding {
 
   protected ActivityInputPointBinding(Object _bindingComponent, View _root, int _localFieldCount,
       AppCompatImageButton buttonBack, MaterialButton buttonSave, AppCompatSpinner spinnerInput,
-      AppCompatTextView textCaptionInputPoint, AppCompatTextView textSubtitle,
+      AppCompatTextView spinnerInputList, AppCompatTextView textCaptionInputPoint,
+      AppCompatTextView textCaptionInputPointList, AppCompatTextView textSubtitle,
       AppCompatTextView textTitle, ConstraintLayout toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonBack = buttonBack;
     this.buttonSave = buttonSave;
     this.spinnerInput = spinnerInput;
+    this.spinnerInputList = spinnerInputList;
     this.textCaptionInputPoint = textCaptionInputPoint;
+    this.textCaptionInputPointList = textCaptionInputPointList;
     this.textSubtitle = textSubtitle;
     this.textTitle = textTitle;
     this.toolbar = toolbar;

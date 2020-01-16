@@ -1455,12 +1455,14 @@ drawable ic_arrow_left
 drawable ic_attachment_file
 drawable ic_baby
 drawable ic_baseline_close_24
+drawable ic_baseline_expand_more_24
 drawable ic_calendar
 drawable ic_calendar_black_24dp
 drawable ic_cell_phone
 drawable ic_class
 drawable ic_clear_black_24dp
 drawable ic_close
+drawable ic_close_system
 drawable ic_edit_black_24dp
 drawable ic_email
 drawable ic_employee_man
@@ -1659,6 +1661,7 @@ id confirm_button
 id container
 id container_data_ayah
 id container_data_ibu
+id container_detail_siswa
 id container_fragment
 id container_header
 id container_header2
@@ -1890,6 +1893,7 @@ id snap
 id snapMargins
 id spacer
 id spinner_input
+id spinner_input_list
 id spinner_kategori_kelas
 id spinner_kelas
 id spinner_siswa
@@ -1929,6 +1933,7 @@ id text_alamat_ayah_siswa
 id text_alamat_ibu_siswa
 id text_anak_ke_siswa
 id text_caption_input_point
+id text_caption_input_point_list
 id text_caption_kategori_kelas
 id text_caption_kelas
 id text_caption_parent1
@@ -1967,8 +1972,10 @@ id text_pekerjaan_ayah_siswa
 id text_pekerjaan_ibu_siswa
 id text_pelanggaran
 id text_pelanggaran_siswa
+id text_penambahan
 id text_penghasilan_ayah_siswa
 id text_penghasilan_ibu_siswa
+id text_pengurangan
 id text_point
 id text_profile
 id text_ranking
@@ -2112,6 +2119,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_data_informasi
 layout fragment_data_pelanggaran
+layout fragment_jenis_pelanggaran
 layout fragment_kelas
 layout fragment_rangking_siswa
 layout fragment_report
