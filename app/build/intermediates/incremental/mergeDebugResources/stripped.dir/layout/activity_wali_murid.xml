@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".features.loginwalimurid.WaliMuridActivity">
+
+  <View
+    android:id="@+id/container_header"
+    android:layout_width="0dp"
+    android:layout_height="300dp"
+    android:background="#303F9F"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/text_nama_wali_murid"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="16dp"
+    android:text="Sutarjo"
+    android:textColor="@android:color/white"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/text_level_user"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:textColor="@android:color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/text_nama_wali_murid"
+    tools:text="Wali Murid" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container_header2"
+    android:layout_width="0dp"
+    android:layout_height="300dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/background_rounded_corner"
+    android:elevation="8dp"
+    app:layout_constraintBottom_toBottomOf="@id/container_header"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/container_header"
+    tools:targetApi="lollipop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_info"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="6dp"
+      app:layout_constraintBottom_toTopOf="@id/container_pelanggaran_siswa"
+      app:layout_constraintEnd_toStartOf="@id/container_profile"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_info_circle"
+        app:layout_constraintBottom_toTopOf="@id/text_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_profile"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="6dp"
+      app:layout_constraintBottom_toTopOf="@id/container_list_guru"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/container_info"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_profile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_account_circle"
+        app:layout_constraintBottom_toTopOf="@id/text_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Siswa"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_profile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_pelanggaran_siswa"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="6dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/container_list_guru"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/container_info">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_pelanggaran_siswa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_history"
+        app:layout_constraintBottom_toTopOf="@id/text_pelanggaran_siswa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_pelanggaran_siswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Riwayat"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_pelanggaran_siswa" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_list_guru"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="6dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/container_pelanggaran_siswa"
+      app:layout_constraintTop_toBottomOf="@id/container_info">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_list_guru"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_teacher_2"
+        app:layout_constraintBottom_toTopOf="@id/text_list_guru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_list_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Guru"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_list_guru" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/button_edit_profile"
+    android:layout_width="0dp"
+    android:layout_height="72dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:text="Edit Profile"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@id/button_logout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:strokeColor="@android:color/holo_red_light" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/button_logout"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:layout_width="0dp"
+    android:layout_height="72dp"
+    android:layout_margin="16dp"
+    android:text="LOGOUT"
+    android:textColor="@android:color/holo_red_light"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:strokeColor="@android:color/holo_red_light" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

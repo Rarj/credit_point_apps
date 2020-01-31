@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                     
+                                                 
+  
+             
+                       
+                                                                                
+             
+                           
+                                                                              
+         
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container_konsultasi_siswa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="#F1F1F1"
+    android:padding="8dp" android:tag="layout/item_data_konsultasi_siswa_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_name"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:tag="binding_1"          
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintEnd_toStartOf="@id/button_whatsapp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Siswa Ganteng" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_nama_wali_murid"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:drawableStart="@drawable/ic_family"
+      android:drawablePadding="8dp"
+      android:tag="binding_2"                       
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_name"
+      tools:text="Sutedjo \nSutarni" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_email_wali_murid"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:drawableStart="@drawable/ic_email"
+      android:drawablePadding="8dp"
+      android:tag="binding_3"                        
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_nama_wali_murid"
+      tools:text="example@example.com" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_nohp_wali_murid"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:drawableStart="@drawable/ic_cell_phone"
+      android:drawablePadding="8dp"
+      android:tag="binding_4"              
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_email_wali_murid"
+      tools:text="082323478916 \n089781723689" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+      android:id="@+id/button_whatsapp"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:background="@null"
+      android:src="@drawable/ic_whatsapp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+         
