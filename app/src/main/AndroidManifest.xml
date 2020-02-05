@@ -12,7 +12,8 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".features.loginwalimurid.editprofile.EditProfileActivity"></activity>
+    <activity android:name=".features.dashboard.ui.datainformasi.detail.DetailInformasiActivity"></activity>
+    <activity android:name=".features.loginwalimurid.editprofile.EditProfileActivity" />
     <activity android:name=".features.guru.GuruActivity" />
     <activity android:name=".features.loginwalimurid.history.HistoryActivity" />
     <activity android:name=".features.loginwalimurid.WaliMuridActivity" />

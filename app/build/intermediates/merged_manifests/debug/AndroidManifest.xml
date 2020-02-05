@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="grack.dev.creditpointapp.features.dashboard.ui.datainformasi.detail.DetailInformasiActivity" />
         <activity android:name="grack.dev.creditpointapp.features.loginwalimurid.editprofile.EditProfileActivity" />
         <activity android:name="grack.dev.creditpointapp.features.guru.GuruActivity" />
         <activity android:name="grack.dev.creditpointapp.features.loginwalimurid.history.HistoryActivity" />

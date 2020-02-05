@@ -1939,6 +1939,8 @@ id text_caption_kelas
 id text_caption_parent1
 id text_caption_parent2
 id text_caption_siswa
+id text_content
+id text_created_by
 id text_creator_informasi
 id text_date
 id text_date_birth_siswa
@@ -1986,6 +1988,7 @@ id text_subtitle_caption_header
 id text_tanggal_informasi
 id text_title
 id text_title_caption_header
+id text_title_informasi
 id text_title_input
 id text_title_report
 id text_ttl_guru
@@ -2085,6 +2088,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dashboard
 layout activity_dashboard_bk
+layout activity_detail_informasi
 layout activity_detail_siswa
 layout activity_edit_profile
 layout activity_guru

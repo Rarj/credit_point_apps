@@ -20,16 +20,16 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_parent.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_genders.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_genders.png"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_employee_woman.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_employee_woman.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_info_circle.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_info_circle.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_employee_woman.xml.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_employee_woman.xml"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_genders.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_genders.png"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_activity_report_daily.xml.flat",
@@ -48,28 +48,28 @@
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_info.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_siswa.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_siswa.png"
-    },
-    {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_ranking.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_ranking.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_item_data_pelanggaran.xml.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_data_pelanggaran.xml"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_siswa.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-hdpi/ic_siswa.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_salary.png.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_salary.png"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_export.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_export.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_close.png.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-ldpi/ic_close.png"
     },
     {
-        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_export.xml.flat",
-        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_export.xml"
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_salary.png.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/build/generated/res/pngs/debug/drawable-mdpi/ic_salary.png"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_item_data_pelanggaran.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/item_data_pelanggaran.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_history.png.flat",
@@ -646,6 +646,10 @@
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/menu_bottom_app_bar_menu.xml.flat",
         "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/menu/bottom_app_bar_menu.xml"
+    },
+    {
+        "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/layout_activity_detail_informasi.xml.flat",
+        "source": "/Volumes/Data/Remote/credit_point_apps/app/src/main/res/layout/activity_detail_informasi.xml"
     },
     {
         "merged": "/Volumes/Data/Remote/credit_point_apps/app/build/intermediates/res/merged/debug/menu_activity_dashboard_drawer_bk.xml.flat",
