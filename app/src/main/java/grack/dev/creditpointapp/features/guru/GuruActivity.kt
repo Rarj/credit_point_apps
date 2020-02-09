@@ -27,7 +27,7 @@ class GuruActivity : AppCompatActivity() {
     viewModel.loadListGuru()
       .subscribe {
         binding.progressHorizontal.visibility = GONE
-        adapterGuru = GuruAdapter(it)
+        adapterGuru = GuruAdapter(it, this)
         binding.recyclerDataGuru.apply {
           layoutManager = LinearLayoutManager(this@GuruActivity)
           adapter = adapterGuru

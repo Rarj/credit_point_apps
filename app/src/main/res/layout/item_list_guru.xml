@@ -14,15 +14,25 @@
     android:layout_height="wrap_content"
     android:padding="16dp">
 
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/image_guru"
+      android:layout_width="64dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:src="@drawable/ic_baby" />
+
     <androidx.appcompat.widget.AppCompatTextView
       android:id="@+id/text_nama_guru"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
       android:text="@{modelGuru.namaGuru + ` - ` + modelGuru.nik}"
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
       android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintStart_toEndOf="@id/image_guru"
       app:layout_constraintTop_toTopOf="parent"
       tools:text="Guru Galak - 60228292929293" />
 
@@ -30,11 +40,12 @@
       android:id="@+id/text_ttl_guru"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
       android:text="@{modelGuru.tempatLahirGuru + `, ` + modelGuru.tglLahirGuru + `\n` + modelGuru.noHp}"
       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
       android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintStart_toEndOf="@id/image_guru"
       app:layout_constraintTop_toBottomOf="@id/text_nama_guru"
       tools:text="Tangerang, 1999-01-01\n 082232983928" />
 

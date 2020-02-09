@@ -13,7 +13,8 @@ public class ItemListGuruBindingImpl extends ItemListGuruBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.image_guru, 3);
     }
     // views
     @NonNull
@@ -24,10 +25,11 @@ public class ItemListGuruBindingImpl extends ItemListGuruBinding  {
     // Inverse Binding Event Handlers
 
     public ItemListGuruBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private ItemListGuruBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[3]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
             );
