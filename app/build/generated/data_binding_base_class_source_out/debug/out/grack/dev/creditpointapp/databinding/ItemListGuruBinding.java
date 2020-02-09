@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
@@ -17,6 +18,9 @@ import java.lang.Object;
 
 public abstract class ItemListGuruBinding extends ViewDataBinding {
   @NonNull
+  public final AppCompatImageView imageGuru;
+
+  @NonNull
   public final AppCompatTextView textNamaGuru;
 
   @NonNull
@@ -26,8 +30,9 @@ public abstract class ItemListGuruBinding extends ViewDataBinding {
   protected Guru mModelGuru;
 
   protected ItemListGuruBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppCompatTextView textNamaGuru, AppCompatTextView textTtlGuru) {
+      AppCompatImageView imageGuru, AppCompatTextView textNamaGuru, AppCompatTextView textTtlGuru) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.imageGuru = imageGuru;
     this.textNamaGuru = textNamaGuru;
     this.textTtlGuru = textTtlGuru;
   }

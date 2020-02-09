@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                     
+                                                 
+
+  
+             
+                      
+                                                                   
+         
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp" android:tag="layout/item_list_guru_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/image_guru"
+      android:layout_width="64dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:src="@drawable/ic_baby" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_nama_guru"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:tag="binding_1"                                     
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/image_guru"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Guru Galak - 60228292929293" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/text_ttl_guru"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:tag="binding_2"                                                                            
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/image_guru"
+      app:layout_constraintTop_toBottomOf="@id/text_nama_guru"
+      tools:text="Tangerang, 1999-01-01\n 082232983928" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

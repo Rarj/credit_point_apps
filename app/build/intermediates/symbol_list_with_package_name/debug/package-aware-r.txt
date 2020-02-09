@@ -1743,6 +1743,7 @@ id image_caption_info
 id image_caption_ranking
 id image_caption_report
 id image_empty
+id image_guru
 id image_info
 id image_list_guru
 id image_login

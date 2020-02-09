@@ -17,7 +17,7 @@ class ProfileActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_profile)
 
-    if (SharedPref.getUser(this).foto.isNullOrEmpty()) {
+    if (SharedPref.getUser(this).foto!!.isBlank()) {
       Glide.with(this).load(R.drawable.ic_teacher_2).into(profile_image)
     } else {
       Glide.with(this).load(SharedPref.getUser(this).foto).into(profile_image)
