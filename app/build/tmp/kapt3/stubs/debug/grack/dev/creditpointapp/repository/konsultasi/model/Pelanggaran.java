@@ -14,7 +14,7 @@ public final class Pelanggaran {
     @com.google.gson.annotations.SerializedName(value = "nama")
     private java.lang.String nama;
     @org.jetbrains.annotations.NotNull()
-    @com.google.gson.annotations.SerializedName(value = "pelanggaranParent")
+    @com.google.gson.annotations.SerializedName(value = "pelanggaran")
     private java.util.List<grack.dev.creditpointapp.repository.konsultasi.model.PelanggaranMurid> pelanggaran;
     @org.jetbrains.annotations.NotNull()
     @com.google.gson.annotations.SerializedName(value = "wali_murid")

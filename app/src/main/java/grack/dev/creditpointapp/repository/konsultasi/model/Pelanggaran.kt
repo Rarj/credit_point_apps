@@ -10,7 +10,7 @@ data class Pelanggaran(
   var idSiswa: String?,
   @SerializedName("nama")
   var nama: String?,
-  @SerializedName("pelanggaranParent")
+  @SerializedName("pelanggaran")
   var pelanggaran: List<PelanggaranMurid>,
   @SerializedName("wali_murid")
   var waliMurid: List<WaliMurid>
